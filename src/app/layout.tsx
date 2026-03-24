@@ -6,6 +6,7 @@ import { cookies, headers } from "next/headers";
 
 import { getSiteUrl } from "@/utils/site-url";
 import SiteHeader from "@/components/site-header";
+import ScrollToTop from "@/components/scroll-to-top";
 import LocaleProvider from "@/providers/locale-provider";
 import { LOCALE_COOKIE_NAME } from "@/utils/locale/constants";
 import { resolveServerLocale } from "@/utils/locale/resolve-locale";
@@ -102,6 +103,7 @@ export default async function RootLayout({
                 <LocaleProvider serverLocale={serverLocale}>
                     <SiteHeader />
                     {children}
+                    <ScrollToTop />
                 </LocaleProvider>
             </body>
         </html>

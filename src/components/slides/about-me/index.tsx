@@ -6,6 +6,7 @@ import { CANVAS_W, HEADER_H, hPctH, hPctY, pctX } from "@/utils/decor/canvas-pct
 
 import AboutMeDecor from "@/components/slides/about-me/about-me-decor";
 import AboutMeHeader from "@/components/slides/about-me/about-me-header";
+import AboutMeMobileHeader from "@/components/slides/about-me/about-me-mobile-header";
 import AboutMeProjects from "@/components/slides/about-me/about-me-projects";
 import AboutMeSummary from "@/components/slides/about-me/about-me-summary";
 
@@ -14,17 +15,14 @@ export default function AboutMe() {
     const m = t.aboutMe;
 
     return (
-        <section
-            id="about-me"
-            aria-label={m.ariaLabel}
-            className="hidden overflow-x-clip bg-white md:block"
-        >
+        <section id="about-me" aria-label={m.ariaLabel} className="overflow-x-clip bg-white">
             <div
                 className="relative mx-auto w-full max-w-[1920px]"
                 style={{ containerType: "inline-size" }}
             >
+                {/* Desktop header with decorative images */}
                 <div
-                    className="relative w-full"
+                    className="relative hidden w-full md:block"
                     style={{ aspectRatio: `${CANVAS_W} / ${HEADER_H}` }}
                 >
                     <AboutMeDecor />
@@ -45,7 +43,7 @@ export default function AboutMe() {
                         style={{
                             left: pctX(196),
                             top: hPctY(888),
-                            fontSize: "clamp(3rem, 11.458cqw, 13.75rem)",
+                            fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                             ...gradientClip,
                         }}
                     >
@@ -55,10 +53,29 @@ export default function AboutMe() {
                     <AboutMeHeader />
                 </div>
 
+                {/* Mobile header */}
+                <div className="md:hidden">
+                    <AboutMeMobileHeader />
+                </div>
+
                 <div
                     className="pb-[clamp(2rem,5.208cqw,6.25rem)] text-[#0F3987]"
-                    style={{ paddingLeft: "10.417cqw", paddingRight: "6.667cqw" }}
+                    style={{
+                        paddingLeft: "clamp(1.25rem, 12.24vw, 10.417cqw)",
+                        paddingRight: "clamp(1.25rem, 8.72vw, 6.667cqw)",
+                    }}
                 >
+                    <h2
+                        className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:hidden"
+                        style={{
+                            fontSize: "clamp(2.375rem, 12.82vw, 6.125rem)",
+                            paddingTop: "5.833cqw",
+                            marginBottom: "clamp(1.5rem, 5.208cqw, 6.25rem)",
+                            ...gradientClip,
+                        }}
+                    >
+                        {m.aboutHeading}
+                    </h2>
                     <AboutMeSummary />
                     <AboutMeProjects />
                 </div>

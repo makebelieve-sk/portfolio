@@ -1,0 +1,22 @@
+echo ""
+echo "[husky] pre-commit"
+
+echo "→ Запуск линтера (ESLint)…"
+if npm run lint; then
+  echo "  Линтер: успешно завершён."
+else
+  echo "  Линтер: завершился с ошибкой."
+  exit 1
+fi
+
+echo "→ Запуск проверки форматирования (Prettier)…"
+if npm run format; then
+  echo "  Форматтер: успешно завершён."
+else
+  echo "  Форматтер: завершился с ошибкой."
+  exit 1
+fi
+
+echo ""
+echo "[husky] pre-commit: всё прошло успешно."
+echo ""

@@ -25,10 +25,10 @@ jobs:
             - run: npm ci
 
             - name: ESLint
-              run: npx eslint .
+              run: npm run lint
 
             - name: Prettier
-              run: npx prettier . --check
+              run: npm run format
 
     build:
         name: Build

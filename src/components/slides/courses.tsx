@@ -34,11 +34,7 @@ export default function Courses() {
     }, [lightboxSrc, closeLightbox]);
 
     return (
-        <section
-            id="courses"
-            aria-label={m.ariaLabel}
-            className="hidden overflow-x-clip bg-white md:block"
-        >
+        <section id="courses" aria-label={m.ariaLabel} className="overflow-x-clip bg-white">
             <div
                 className="relative mx-auto w-full max-w-[1920px]"
                 style={{ containerType: "inline-size" }}
@@ -48,7 +44,7 @@ export default function Courses() {
                     style={{
                         paddingLeft: "10cqw",
                         paddingTop: "5.833cqw",
-                        fontSize: "clamp(3rem, 11.458cqw, 13.75rem)",
+                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
@@ -60,8 +56,8 @@ export default function Courses() {
                     style={{
                         paddingLeft: "10.573cqw",
                         paddingRight: "7.5cqw",
-                        marginTop: "clamp(1.5rem, 3.177cqw, 3.813rem)",
-                        paddingBottom: "clamp(2.5rem, 5.417cqw, 6.5rem)",
+                        marginTop: "clamp(0.75rem, 3.177cqw, 3.813rem)",
+                        paddingBottom: "clamp(1.5rem, 5.417cqw, 6.5rem)",
                     }}
                 >
                     {m.entries.map((entry, i) => {
@@ -72,13 +68,13 @@ export default function Courses() {
                                     <div
                                         className="flex shrink-0 items-center justify-center"
                                         style={{
-                                            width: "clamp(2rem, 7.5cqw, 9rem)",
+                                            width: "clamp(0.5rem, 4.69cqw, 9rem)",
                                         }}
                                     >
                                         <div
                                             style={{
-                                                width: "clamp(3px, 0.26cqw, 5px)",
-                                                height: "clamp(12rem, 24.167cqw, 29rem)",
+                                                width: "clamp(1px, 0.26cqw, 5px)",
+                                                height: "clamp(5rem, 24.167cqw, 29rem)",
                                                 background:
                                                     "linear-gradient(180deg, rgba(15,57,135,0) 0%, rgba(15,57,135,1) 50%, rgba(15,57,135,0) 100%)",
                                             }}
@@ -89,7 +85,7 @@ export default function Courses() {
                                     <div
                                         className="flex flex-col justify-start"
                                         style={{
-                                            fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
+                                            fontSize: "clamp(0.375rem, 1.46cqw, 1.75rem)",
                                             minHeight: "4em",
                                         }}
                                     >
@@ -108,9 +104,9 @@ export default function Courses() {
                                     <button
                                         type="button"
                                         onClick={() => openLightbox(entry.certificate)}
-                                        className={`relative mt-[clamp(0.5rem,1.042cqw,1.25rem)] block w-full cursor-pointer overflow-hidden bg-white transition-transform duration-200 ease-out hover:scale-[1.03] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0F3987] ${
+                                        className={`relative mt-[clamp(0.25rem,1.042cqw,1.25rem)] block w-full cursor-pointer overflow-hidden bg-white transition-transform duration-200 ease-out hover:scale-[1.03] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0F3987] ${
                                             hasBorder
-                                                ? "rounded-[clamp(3px,0.26cqw,5px)] border border-[#0F3987]"
+                                                ? "rounded-[clamp(2px,0.26cqw,5px)] border border-[#0F3987]"
                                                 : ""
                                         }`}
                                         style={{ aspectRatio: "434 / 306" }}
@@ -120,7 +116,7 @@ export default function Courses() {
                                             alt={`${entry.provider} — ${entry.name}`}
                                             fill
                                             className="object-cover object-center"
-                                            sizes="(min-width:1920px) 500px, 26vw"
+                                            sizes="(min-width:1920px) 500px, (min-width:768px) 26vw, 25vw"
                                             loading="eager"
                                         />
                                     </button>

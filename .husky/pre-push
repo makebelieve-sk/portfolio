@@ -1,0 +1,14 @@
+echo ""
+echo "[husky] pre-push"
+
+echo "→ Запуск сборки (next build)…"
+if npm run build; then
+  echo "  Сборка: успешно завершена."
+else
+  echo "  Сборка: завершилась с ошибкой."
+  exit 1
+fi
+
+echo ""
+echo "[husky] pre-push: всё прошло успешно."
+echo ""

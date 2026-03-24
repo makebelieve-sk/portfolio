@@ -4,6 +4,8 @@ export const BULLET_GRADIENT = "radial-gradient(circle at 50% 50%, #0551DC 0%, #
 
 export const ANIM_MS = 200;
 
+export const SCROLL_THRESHOLD = 200;
+
 export const gradientClip = {
     backgroundImage: GRADIENT_TEXT,
     WebkitBackgroundClip: "text" as const,

@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "private": true,
     "description": "Personal portfolio site built with Next.js, React, TypeScript, and Tailwind CSS.",
     "keywords": [
@@ -29,10 +29,14 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint . && prettier . --check",
-        "format": "prettier . --write"
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier . --check",
+        "format:fix": "prettier . --write",
+        "prepare": "husky"
     },
     "dependencies": {
+        "@react-pdf/renderer": "^4.3.2",
         "next": "16.2.1",
         "react": "19.2.4",
         "react-dom": "19.2.4"
@@ -45,6 +49,7 @@
         "eslint": "^9",
         "eslint-config-next": "16.2.1",
         "eslint-config-prettier": "^10.1.8",
+        "husky": "^9.1.7",
         "prettier": "^3.8.1",
         "tailwindcss": "^4",
         "typescript": "^5"

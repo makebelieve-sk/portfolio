@@ -17,7 +17,7 @@ export default function AboutMeHeader() {
             <h1
                 className="font-[family-name:var(--font-heading)] font-normal uppercase leading-none tracking-[0.02em] text-transparent"
                 style={{
-                    fontSize: "clamp(3rem, 11.458cqw, 13.75rem)",
+                    fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                     ...gradientClip,
                 }}
             >
@@ -29,7 +29,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-[family-name:var(--font-heading)] font-normal uppercase leading-[0.98] text-transparent"
                         style={{
-                            fontSize: "clamp(1.25rem, 2.552cqw, 3.0625rem)",
+                            fontSize: "clamp(1.125rem, 2.45cqw, 2.9375rem)",
                             ...gradientClip,
                         }}
                     >
@@ -38,7 +38,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-medium leading-[1.11] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                            fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                             marginTop: "0.573cqw",
                         }}
                     >
@@ -50,7 +50,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-[family-name:var(--font-heading)] font-normal uppercase leading-[0.98] text-transparent"
                         style={{
-                            fontSize: "clamp(1.25rem, 2.552cqw, 3.0625rem)",
+                            fontSize: "clamp(1.125rem, 2.45cqw, 2.9375rem)",
                             ...gradientClip,
                         }}
                     >
@@ -59,7 +59,7 @@ export default function AboutMeHeader() {
                     <p
                         className="font-medium leading-[1.11] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                            fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                             marginTop: "0.573cqw",
                         }}
                     >
@@ -71,7 +71,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-[family-name:var(--font-heading)] font-normal uppercase leading-[0.96] text-transparent"
                         style={{
-                            fontSize: "clamp(1.25rem, 2.552cqw, 3.0625rem)",
+                            fontSize: "clamp(1.125rem, 2.45cqw, 2.9375rem)",
                             ...gradientClip,
                         }}
                     >
@@ -80,7 +80,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-medium leading-[1.11] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                            fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                             marginTop: "0.573cqw",
                         }}
                     >
@@ -94,7 +94,7 @@ export default function AboutMeHeader() {
                     <p
                         className="font-[family-name:var(--font-heading)] font-normal uppercase leading-[0.98] text-transparent"
                         style={{
-                            fontSize: "clamp(1.25rem, 2.552cqw, 3.0625rem)",
+                            fontSize: "clamp(1.125rem, 2.45cqw, 2.9375rem)",
                             ...gradientClip,
                         }}
                     >
@@ -103,7 +103,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-medium leading-[1.11] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                            fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                             marginTop: "0.573cqw",
                         }}
                     >
@@ -115,7 +115,7 @@ export default function AboutMeHeader() {
                     <p
                         className="whitespace-pre-line font-[family-name:var(--font-heading)] font-normal uppercase leading-[0.98] text-transparent"
                         style={{
-                            fontSize: "clamp(1.25rem, 2.552cqw, 3.0625rem)",
+                            fontSize: "clamp(1.125rem, 2.45cqw, 2.9375rem)",
                             ...gradientClip,
                         }}
                     >
@@ -124,7 +124,7 @@ export default function AboutMeHeader() {
                     <p
                         className="font-medium leading-[1.11] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                            fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                             marginTop: "0.573cqw",
                         }}
                     >

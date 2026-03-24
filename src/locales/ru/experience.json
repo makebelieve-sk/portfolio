@@ -7,6 +7,9 @@
         "finamPeriodPresent": "Август 2025 — сейчас",
         "durationMonthOne": "месяц",
         "durationMonthsMany": "месяцев",
+        "durationYearOne": "год",
+        "durationYearsMany": "лет",
+        "durationAnd": "и",
         "entries": [
             {
                 "company": "Финам",

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { useLocale } from "@/providers/locale-provider";
 import { gradientClip } from "@/utils/constants";
-import { inclusiveMonthsFromStart, monthUnitForCount } from "@/utils/date/month-helpers";
+import { formatDuration, inclusiveMonthsFromStart } from "@/utils/date/month-helpers";
 
 import ExperienceEntry from "@/components/slides/experience/experience-entry";
 
@@ -26,11 +26,7 @@ export default function Experience() {
     };
 
     return (
-        <section
-            id="experience"
-            aria-label={m.ariaLabel}
-            className="hidden overflow-x-clip bg-white md:block"
-        >
+        <section id="experience" aria-label={m.ariaLabel} className="overflow-x-clip bg-white">
             <div
                 className="relative mx-auto w-full max-w-[1920px]"
                 style={{ containerType: "inline-size" }}
@@ -40,7 +36,7 @@ export default function Experience() {
                     style={{
                         paddingLeft: "10.208cqw",
                         paddingTop: "6.354cqw",
-                        fontSize: "clamp(3rem, 11.458cqw, 13.75rem)",
+                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
@@ -58,15 +54,15 @@ export default function Experience() {
                         const isCurrentJob = i === 0;
                         let periodLabel = entry.period;
                         if (isCurrentJob) {
-                            const months = inclusiveMonthsFromStart(new Date(2025, 7, 1));
-                            periodLabel = `${m.finamPeriodPresent} (${months} ${monthUnitForCount(
-                                locale,
-                                months,
-                                {
-                                    singular: m.durationMonthOne,
-                                    plural: m.durationMonthsMany,
-                                },
-                            )})`;
+                            const totalMonths = inclusiveMonthsFromStart(new Date(2025, 7, 1));
+                            const duration = formatDuration(locale, totalMonths, {
+                                monthOne: m.durationMonthOne,
+                                monthsMany: m.durationMonthsMany,
+                                yearOne: m.durationYearOne,
+                                yearsMany: m.durationYearsMany,
+                                and: m.durationAnd,
+                            });
+                            periodLabel = `${m.finamPeriodPresent} (${duration})`;
                         }
                         return (
                             <ExperienceEntry

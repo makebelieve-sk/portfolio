@@ -9,7 +9,8 @@ export default function Intro() {
 
     return (
         <section
-            className="relative flex min-h-dvh min-w-0 flex-col text-white"
+            className="relative flex min-w-0 flex-col text-white"
+            style={{ minHeight: "min(100dvh, 22dvh + 28vw)" }}
             aria-label={t.hero.portfolioHeading}
         >
             <div
@@ -17,13 +18,13 @@ export default function Intro() {
                 aria-hidden
             />
 
-            <div className="relative z-10 flex min-w-0 flex-1 flex-col px-5 pb-6 pt-6 sm:px-8 sm:pb-8 sm:pt-8 md:px-[clamp(2.5rem,10vw,12rem)] md:pb-[clamp(2rem,4.8vw,5.75rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
+            <div className="relative z-10 flex min-w-0 flex-1 flex-col pb-6 pl-[10.417vw] pr-[5vw] pt-6 sm:pb-8 sm:pt-8 md:px-[clamp(2.5rem,10vw,12rem)] md:pb-[clamp(2rem,4.8vw,5.75rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
                 <div className="relative z-10 flex min-w-0 flex-col items-start">
-                    <h1 className="text-[clamp(3.5rem,14.5vw,17.4rem)] font-normal leading-[1] tracking-[0.02em]">
+                    <h1 className="text-[clamp(2.125rem,14.3vw,17.15rem)] font-normal leading-[1] tracking-[0.02em]">
                         {t.hero.portfolioHeading}
                     </h1>
 
-                    <p className="mt-[clamp(0.75rem,3.07vw,3.7rem)] text-[clamp(1.5rem,3.75vw,4.5rem)] font-medium leading-[1.333]">
+                    <p className="mt-[clamp(0.75rem,3.07vw,3.7rem)] text-[clamp(0.875rem,3.65vw,4.375rem)] font-medium leading-[1.333]">
                         {t.hero.nameLine}
                     </p>
 
@@ -39,14 +40,14 @@ export default function Intro() {
                                     "clamp(0.75rem, 1.8vw, 2.2rem) clamp(0.75rem, 2.03vw, 2.44rem) clamp(0.75rem, 2.2vw, 2.6rem) clamp(1.5rem, 3.85vw, 4.63rem)",
                             }}
                         >
-                            <span className="block text-[clamp(1.125rem,3.28vw,3.94rem)] leading-[0.94] text-[#072B70]">
+                            <span className="block text-[clamp(0.75rem,3.18vw,3.815rem)] leading-[0.94] text-[#072B70]">
                                 {t.hero.roleBadgeLine1}
                                 <br />
                                 {t.hero.roleBadgeLine2}
                             </span>
                         </div>
 
-                        <div className="absolute left-0 top-0 z-10 flex size-[clamp(4rem,6.68vw,8rem)] items-center justify-center rounded-full border-[clamp(0.25rem,0.567vw,0.68rem)] border-[#0B3178] bg-white">
+                        <div className="absolute left-0 top-0 z-10 flex size-[clamp(2.5rem,6.68vw,8rem)] items-center justify-center rounded-full border-[clamp(0.15rem,0.567vw,0.68rem)] border-[#0B3178] bg-white">
                             <Image
                                 src="/slides/intro/role-icon.png"
                                 alt=""
@@ -58,7 +59,7 @@ export default function Intro() {
                     </div>
                 </div>
 
-                <div className="absolute right-[8vw] top-[34.4%] hidden w-[40.5vw] min-[500px]:block">
+                <div className="absolute right-[12vw] top-[36%] w-[34.1vw] md:right-[8vw] md:top-[37%] md:w-[37vw] lg:top-[34.4%] lg:w-[40.5vw]">
                     <Image
                         src="/slides/intro/hero.png"
                         alt=""
@@ -68,7 +69,7 @@ export default function Intro() {
                         style={{
                             filter: "drop-shadow(11px 10px 32px rgba(0,46,82,0.1)) drop-shadow(44px 40px 59px rgba(0,46,82,0.09)) drop-shadow(98px 89px 80px rgba(0,46,82,0.05))",
                         }}
-                        sizes="40.5vw"
+                        sizes="(min-width: 1024px) 40.5vw, (min-width: 768px) 37vw, 34.1vw"
                         priority
                     />
                 </div>

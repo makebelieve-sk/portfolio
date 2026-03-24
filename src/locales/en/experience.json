@@ -7,6 +7,9 @@
         "finamPeriodPresent": "August 2025 — present",
         "durationMonthOne": "month",
         "durationMonthsMany": "months",
+        "durationYearOne": "year",
+        "durationYearsMany": "years",
+        "durationAnd": "and",
         "entries": [
             {
                 "company": "Finam",

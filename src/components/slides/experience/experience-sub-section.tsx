@@ -28,7 +28,7 @@ export default function ExperienceSubSection({
                 <p
                     className="font-semibold leading-[1.267] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
+                        fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
                     }}
                 >
                     {section.heading}
@@ -39,7 +39,7 @@ export default function ExperienceSubSection({
                 <p
                     className="font-medium leading-[1.267] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
+                        fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
                         marginTop: "heading" in section && section.heading ? "0.25em" : undefined,
                     }}
                 >
@@ -51,13 +51,12 @@ export default function ExperienceSubSection({
                 <ul
                     className="list-none p-0 font-medium leading-[1.21] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.8125rem, 1.5104cqw, 1.8125rem)",
+                        fontSize: "clamp(0.6875rem, 1.41cqw, 1.6875rem)",
                         marginTop:
                             ("heading" in section && section.heading) ||
                             ("description" in section && section.description)
                                 ? "clamp(0.75rem, 2.031cqw, 2.438rem)"
                                 : undefined,
-                        marginLeft: "clamp(0.5rem, 1.146cqw, 1.375rem)",
                     }}
                 >
                     {section.bullets.map((bullet) => (
@@ -65,15 +64,16 @@ export default function ExperienceSubSection({
                             key={bullet}
                             className="relative"
                             style={{
-                                paddingLeft: "clamp(0.75rem, 1.25cqw, 1.5rem)",
+                                paddingLeft: "clamp(1.125rem, 1.75cqw, 2.1rem)",
                                 marginTop: "clamp(4px, 0.781cqw, 0.938rem)",
                             }}
                         >
                             <span
-                                className="absolute left-0 top-[0.35em] rounded-full"
+                                className="absolute left-0 -translate-y-1/2 rounded-full"
                                 style={{
-                                    width: "clamp(10px, 0.73cqw, 14px)",
-                                    height: "clamp(9px, 0.68cqw, 13px)",
+                                    top: "0.605em",
+                                    width: "clamp(0.5rem, 0.73cqw, 0.875rem)",
+                                    height: "clamp(0.4375rem, 0.68cqw, 0.8125rem)",
                                     background: BULLET_GRADIENT,
                                 }}
                                 aria-hidden

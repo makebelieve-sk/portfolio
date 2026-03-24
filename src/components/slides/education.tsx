@@ -8,11 +8,7 @@ export default function Education() {
     const m = t.education;
 
     return (
-        <section
-            id="education"
-            aria-label={m.ariaLabel}
-            className="hidden overflow-x-clip bg-white md:block"
-        >
+        <section id="education" aria-label={m.ariaLabel} className="overflow-x-clip bg-white">
             <div
                 className="relative mx-auto w-full max-w-[1920px]"
                 style={{ containerType: "inline-size" }}
@@ -22,7 +18,7 @@ export default function Education() {
                     style={{
                         paddingLeft: "10cqw",
                         paddingTop: "5.833cqw",
-                        fontSize: "clamp(3rem, 11.458cqw, 13.75rem)",
+                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
@@ -38,7 +34,7 @@ export default function Education() {
                     <p
                         className="font-bold uppercase leading-none text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(0.875rem, 1.667cqw, 2rem)",
+                            fontSize: "clamp(0.75rem, 1.56cqw, 1.875rem)",
                             marginTop: "clamp(1.5rem, 2.917cqw, 3.5rem)",
                         }}
                     >
@@ -46,9 +42,9 @@ export default function Education() {
                     </p>
 
                     <p
-                        className="font-medium leading-[1.21] text-[#0F3987]"
+                        className="font-medium leading-[1.08] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
+                            fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
                             marginTop: "clamp(0.5rem, 1.146cqw, 1.375rem)",
                         }}
                     >
@@ -56,10 +52,11 @@ export default function Education() {
                     </p>
 
                     <div
-                        className="flex"
+                        className="flex flex-wrap md:flex-nowrap"
                         style={{
-                            marginTop: "clamp(2rem, 4.0625cqw, 4.875rem)",
-                            paddingBottom: "clamp(3rem, 7.552cqw, 9.063rem)",
+                            marginTop: "clamp(1.25rem, 4.0625cqw, 4.875rem)",
+                            paddingBottom: "clamp(1.5rem, 7.552cqw, 9.063rem)",
+                            gap: "clamp(0.75rem, 0, 0) 0",
                         }}
                     >
                         {m.degrees.map((degree, i) => (
@@ -68,7 +65,7 @@ export default function Education() {
                                     <div
                                         className="shrink-0"
                                         style={{
-                                            width: "clamp(4rem, 7.604cqw, 9.125rem)",
+                                            width: "clamp(1rem, 7.604cqw, 9.125rem)",
                                             display: "flex",
                                             alignItems: "center",
                                             justifyContent: "center",
@@ -76,8 +73,8 @@ export default function Education() {
                                     >
                                         <div
                                             style={{
-                                                width: "clamp(2px, 0.26cqw, 5px)",
-                                                height: "clamp(5rem, 8.854cqw, 10.625rem)",
+                                                width: "clamp(1px, 0.26cqw, 5px)",
+                                                height: "clamp(3rem, 8.854cqw, 10.625rem)",
                                                 background:
                                                     "linear-gradient(180deg, rgba(15,57,135,0) 0%, rgba(15,57,135,1) 50%, rgba(15,57,135,0) 100%)",
                                             }}
@@ -85,34 +82,31 @@ export default function Education() {
                                     </div>
                                 )}
                                 <div
-                                    className="min-w-0"
+                                    className="flex min-w-0 items-start justify-center"
                                     style={{
-                                        width:
-                                            i === 0
-                                                ? "clamp(10rem, 24.74cqw, 29.688rem)"
-                                                : i === 1
-                                                  ? "clamp(8rem, 18.281cqw, 21.938rem)"
-                                                  : "clamp(9rem, 20.729cqw, 24.875rem)",
+                                        width: "clamp(4rem, 21.25cqw, 25.5rem)",
                                         flexShrink: 0,
                                     }}
                                 >
-                                    <p
-                                        className="font-bold uppercase leading-[1.21] text-[#0F3987]"
-                                        style={{
-                                            fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
-                                        }}
-                                    >
-                                        {degree.year}
-                                    </p>
-                                    <p
-                                        className="whitespace-pre-line font-medium leading-[1.21] text-[#0F3987]"
-                                        style={{
-                                            fontSize: "clamp(0.875rem, 1.5625cqw, 1.875rem)",
-                                            marginTop: "clamp(4px, 0.521cqw, 0.625rem)",
-                                        }}
-                                    >
-                                        {degree.specialty}
-                                    </p>
+                                    <div className="min-w-0">
+                                        <p
+                                            className="font-bold uppercase leading-[1.21] text-[#0F3987]"
+                                            style={{
+                                                fontSize: "clamp(0.5rem, 1.46cqw, 1.75rem)",
+                                            }}
+                                        >
+                                            {degree.year}
+                                        </p>
+                                        <p
+                                            className="whitespace-pre-line font-medium leading-[1.21] text-[#0F3987]"
+                                            style={{
+                                                fontSize: "clamp(0.5rem, 1.46cqw, 1.75rem)",
+                                                marginTop: "clamp(2px, 0.521cqw, 0.625rem)",
+                                            }}
+                                        >
+                                            {degree.specialty}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))}

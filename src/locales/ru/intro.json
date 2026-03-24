@@ -13,6 +13,10 @@
         "labelEn": "Английский"
     },
     "header": {
-        "downloadResumePdfAria": "Скачать резюме (PDF)"
+        "downloadResumePdfAria": "Скачать резюме (PDF)",
+        "downloadResumePdfError": "Не удалось скачать PDF. Попробуйте позже."
+    },
+    "scrollToTop": {
+        "label": "Наверх"
     }
 }

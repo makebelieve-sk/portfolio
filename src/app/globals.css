@@ -32,6 +32,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: clamp(11px, calc(8.857px + 0.6696vw), 14px);
+    }
+}
+
 body {
     min-height: 100%;
     background-color: var(--background);

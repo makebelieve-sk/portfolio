@@ -8,10 +8,9 @@ interface ProjectLinkProps {
 export default function ProjectLink({ url, label }: ProjectLinkProps) {
     return (
         <div
-            className="flex items-center"
+            className="flex items-center justify-center"
             style={{
                 marginTop: "clamp(1rem, 4.167cqw, 5rem)",
-                marginLeft: "clamp(1rem, 32.344cqw, 38.813rem)",
             }}
         >
             <span
@@ -27,7 +26,7 @@ export default function ProjectLink({ url, label }: ProjectLinkProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#0F3987] font-bold uppercase text-white decoration-white underline-offset-[0.2em] hover:underline"
                 style={{
-                    fontSize: "clamp(1rem, 1.823cqw, 2.1875rem)",
+                    fontSize: "clamp(0.875rem, 1.72cqw, 2.0625rem)",
                     paddingInline: "clamp(0.75rem, 2.083cqw, 2.5rem)",
                     height: "clamp(2rem, 2.76cqw, 3.3125rem)",
                     borderRadius: "clamp(3px, 0.365cqw, 7px)",
