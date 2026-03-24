@@ -32,7 +32,7 @@ export default function Education() {
                     }}
                 >
                     <p
-                        className="font-bold uppercase leading-none text-[#0F3987]"
+                        className="font-bold uppercase leading-[1.25] text-[#0F3987]"
                         style={{
                             fontSize: "clamp(0.75rem, 1.56cqw, 1.875rem)",
                             marginTop: "clamp(1.5rem, 2.917cqw, 3.5rem)",

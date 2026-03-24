@@ -67,7 +67,7 @@ export default function SiteHeader() {
 
     return (
         <header className="absolute inset-x-0 top-0 z-50 flex justify-end pl-5 pr-[10.417vw] pt-6 sm:pl-8 sm:pt-8 md:px-[clamp(2.5rem,10.5vw,12.5rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
-            <div className="pointer-events-auto flex items-start gap-[clamp(0.75rem,1.5vw,1.5rem)] font-heading text-[clamp(0.875rem,1.98vw,2.375rem)] tracking-normal text-white">
+            <div className="pointer-events-auto flex items-start gap-[clamp(0.75rem,1.5vw,1.5rem)] font-heading text-[clamp(1.25rem,1.98vw,2.375rem)] tracking-normal text-white md:text-[clamp(0.875rem,1.98vw,2.375rem)]">
                 <button
                     type="button"
                     onClick={handleDownloadResume}
@@ -80,14 +80,14 @@ export default function SiteHeader() {
                         alt=""
                         width={100}
                         height={100}
-                        className={`h-[0.82em] w-[0.82em] object-contain ${downloading ? "animate-pulse" : ""}`}
+                        className={`h-[1.1em] w-[1.1em] object-contain md:h-[0.82em] md:w-[0.82em] ${downloading ? "animate-pulse" : ""}`}
                         sizes="48px"
                     />
                 </button>
                 <div ref={containerRef} className="relative -mt-[0.22em]" onBlur={handleBlur}>
                     <button
                         type="button"
-                        className="cursor-pointer rounded-md px-1 py-0 uppercase leading-none tracking-[0.12em] opacity-95 transition-opacity hover:opacity-100 md:tracking-normal"
+                        className="cursor-pointer rounded-md px-2 py-1 uppercase leading-none tracking-[0.12em] opacity-95 transition-opacity hover:opacity-100 md:px-1 md:py-0 md:tracking-normal"
                         aria-expanded={menuOpen}
                         aria-haspopup="true"
                         aria-label={

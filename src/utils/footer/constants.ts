@@ -10,9 +10,44 @@ export const EMAIL = "skryabin.aleksey99@gmail.com";
 export const EMAIL_HREF = "mailto:skryabin.aleksey99@gmail.com";
 
 export const QR_CODES = [
-    { src: "/slides/footer/qr-telegram.png", altKey: "qrTelegramAlt", x: 829, y: 98, w: 154 },
-    { src: "/slides/footer/qr-vk.png", altKey: "qrVkAlt", x: 1013, y: 98, w: 154 },
-    { src: "/slides/footer/qr-github.png", altKey: "qrGithubAlt", x: 1197, y: 98, w: 153 },
-    { src: "/slides/footer/qr-gitlab.png", altKey: "qrGitlabAlt", x: 1380, y: 96, w: 158 },
-    { src: "/slides/footer/qr-linkedin.png", altKey: "qrLinkedinAlt", x: 1568, y: 96, w: 158 },
+    {
+        src: "/slides/footer/qr-telegram.png",
+        altKey: "qrTelegramAlt",
+        href: "https://t.me/makebelieve_sk",
+        x: 829,
+        y: 98,
+        w: 154,
+    },
+    {
+        src: "/slides/footer/qr-vk.png",
+        altKey: "qrVkAlt",
+        href: "https://vk.com/makebelieve_sk",
+        x: 1013,
+        y: 98,
+        w: 154,
+    },
+    {
+        src: "/slides/footer/qr-github.png",
+        altKey: "qrGithubAlt",
+        href: "https://github.com/makebelieve-sk",
+        x: 1197,
+        y: 98,
+        w: 153,
+    },
+    {
+        src: "/slides/footer/qr-gitlab.png",
+        altKey: "qrGitlabAlt",
+        href: "https://gitlab.com/makebelieve99",
+        x: 1380,
+        y: 96,
+        w: 158,
+    },
+    {
+        src: "/slides/footer/qr-linkedin.png",
+        altKey: "qrLinkedinAlt",
+        href: "https://www.linkedin.com/in/makebelieve-sk",
+        x: 1568,
+        y: 96,
+        w: 158,
+    },
 ] as const;

@@ -151,7 +151,14 @@ export default function SiteFooter() {
                 </div>
                 <div className="mt-[clamp(0.75rem,3.25vw,1.5rem)] flex items-center justify-center gap-[clamp(0.375rem,1.56vw,0.75rem)]">
                     {QR_CODES.map((qr) => (
-                        <div key={qr.src} style={{ width: "clamp(2.5rem, 8.46vw, 4.06rem)" }}>
+                        <a
+                            key={qr.src}
+                            href={qr.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ width: "clamp(2.5rem, 8.46vw, 4.06rem)" }}
+                            aria-label={f[qr.altKey]}
+                        >
                             <Image
                                 src={qr.src}
                                 alt={f[qr.altKey]}
@@ -160,7 +167,7 @@ export default function SiteFooter() {
                                 className="h-auto w-full rounded-[2px] object-contain"
                                 sizes="(min-width: 768px) 8vw, 8.46vw"
                             />
-                        </div>
+                        </a>
                     ))}
                 </div>
             </div>

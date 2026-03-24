@@ -156,7 +156,7 @@ export default function Courses() {
                         }`}
                         style={{ transitionDuration: `${ANIM_MS}ms` }}
                         sizes="90vw"
-                        priority
+                        loading="eager"
                     />
                 </div>
             )}

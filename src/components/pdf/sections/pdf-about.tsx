@@ -38,8 +38,8 @@ export default function PdfAbout({ messages }: PdfAboutProps) {
                     >
                         <Text
                             style={{
-                                fontSize: 7.5,
-                                fontWeight: 700,
+                                fontFamily: "Bebas Neue",
+                                fontSize: 10,
                                 color: COLORS.primary,
                                 marginBottom: 2,
                             }}

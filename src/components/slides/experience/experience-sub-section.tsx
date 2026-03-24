@@ -73,7 +73,7 @@ export default function ExperienceSubSection({
                                 style={{
                                     top: "0.605em",
                                     width: "clamp(0.5rem, 0.73cqw, 0.875rem)",
-                                    height: "clamp(0.4375rem, 0.68cqw, 0.8125rem)",
+                                    height: "clamp(0.5rem, 0.73cqw, 0.875rem)",
                                     background: BULLET_GRADIENT,
                                 }}
                                 aria-hidden
