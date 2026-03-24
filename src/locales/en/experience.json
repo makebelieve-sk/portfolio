@@ -1,0 +1,145 @@
+{
+    "experience": {
+        "ariaLabel": "Work experience",
+        "heading": "work experience",
+        "projectLinkLabel": "Project",
+        "stackPrefix": "Stack: ",
+        "finamPeriodPresent": "August 2025 — present",
+        "durationMonthOne": "month",
+        "durationMonthsMany": "months",
+        "entries": [
+            {
+                "company": "Finam",
+                "position": "Senior Fullstack Developer",
+                "period": "",
+                "intro": "Participated in a dedicated product group focused on rapid prototyping and developing new ideas from concept to working MVP. As part of the team, delivered two diverse projects in the crypto and fintech space.",
+                "subSections": [
+                    {
+                        "heading": "Project 1: Crypto analytics platform with AI chat",
+                        "description": "A platform for traders and investors that aggregates exchange data, news feeds, and blockchain information to calculate personalized statistics and provide recommendations.",
+                        "bullets": [
+                            "Developed a high-load Node.js backend (microservice architecture) with inter-service communication via Apache Kafka.",
+                            "Integrated exchange APIs: implemented real-time data collection via REST and WebSocket (connecting to major exchanges), stream aggregation and normalization.",
+                            "Connected external data sources: parsing and processing data from CoinMarketCap, Messari, DeFiLlama, CoinGecko to enrich analytics and news feeds.",
+                            "Worked with smart contracts: interacting with Ethereum-compatible networks via JSON-RPC providers, interacting with WebSocket RPC providers, working with Solidity contracts.",
+                            "Developed an AI module: built a chat using AI SDK (integrating language models to answer user queries based on their portfolio and market data).",
+                            "Database work: schema design and query optimization in PostgreSQL (transactional data) and ClickHouse (analytics, time series, large volumes of historical data)."
+                        ]
+                    },
+                    {
+                        "heading": "Project 2: Prediction market (Polymarket-like) for influencers",
+                        "description": "A platform enabling influencers to create polls (prediction markets) and followers to participate by placing bets. Implemented as a web app, mobile app (React Native), and Telegram Mini App",
+                        "bullets": [
+                            "Architected the system from scratch: stack selection, microservice decomposition, ensuring synchronization across different clients.",
+                            "Developed the backend (Node.js) and smart contracts for prediction market logic (event creation, bet processing, payout calculations). Blockchain interaction via JSON-RPC, contract event handling.",
+                            "Created a unified API for three clients: web (React), mobile (React Native), and Telegram Mini App. Ensured consistent business logic and security.",
+                            "Wallet integration: implemented mechanisms for connecting crypto wallets (MetaMask, WalletConnect, Unisat, Phantom) for in-platform transactions.",
+                            "Voting data processing: PostgreSQL for user data, results, and history; ClickHouse for activity analytics and influencer ranking calculations.",
+                            "DevOps and CI/CD: set up pipelines for automated testing and deployment, containerization (Docker), orchestration (Kubernetes)."
+                        ]
+                    },
+                    {
+                        "heading": "Shared R&D group achievements:",
+                        "bullets": [
+                            "Participated in the full product lifecycle — from brainstorming and design decisions to shipping MVPs to production.",
+                            "Refactored and optimized existing modules, ensuring scalability and maintainability.",
+                            "Actively collaborated with ML, mobile development, and design teams to align requirements and timelines.",
+                            "Contributed to code reviews, development standards adoption, and rapid prototyping of new features."
+                        ]
+                    }
+                ],
+                "stack": "Node.js, Nest.js, Javascript, TypeScript, Kafka, PostgreSQL, Prisma, ClickHouse, Redis, REST, WebSocket, JSON-RPC, Ethers.js, solana/web3, web3, Docker, Kubernetes, Next.js, Zustand, React Native, Expo, AI SDK (OpenAI, etc.), Git, CI/CD, Claude Code, Cursor"
+            },
+            {
+                "company": "Pharmhub",
+                "position": "Senior Fullstack Developer",
+                "period": "March 2025 — July 2025 (5 months)",
+                "subSections": [
+                    {
+                        "bullets": [
+                            "Architected and developed a high-load B2B/B2C platform for pharmaceutical manufacturers and consumers.",
+                            "Full project ownership: from design decisions and task decomposition to sprint planning and quality control of delivered features.",
+                            "Database optimization: schema design, complex queries and pharmaceutical reference catalogs, ensuring high response speed under peak loads.",
+                            "Codebase refactoring, improved readability and maintainability, extensive test coverage for critical modules.",
+                            "CI/CD setup and maintenance for automated testing and platform deployment.",
+                            "Contributing to engineering culture: conducting interviews, onboarding and mentoring new team members, immersing them in pharma domain specifics."
+                        ]
+                    }
+                ],
+                "stack": "Javascript, Typescript, React, Redux-toolkit, Scss, Vite, Postgres, Clickhouse, Prisma, Git, Docker, Kubernetes, Node.js, Nest.js, Go, Kafka, Socket.io, Redis, Jest, Supertest, React testing library, Yandex Tracker, Cursor"
+            },
+            {
+                "company": "Biocad",
+                "position": "Senior Backend Developer",
+                "period": "November 2024 — March 2025 (5 months)",
+                "subSections": [
+                    {
+                        "bullets": [
+                            "Development and maintenance of a high-load B2B platform: ensuring uninterrupted operation of a business-critical internal tool for company employees.",
+                            "Fault-tolerant architecture design: building a scalable solution from scratch, including both client and server sides optimized for heavy loads.",
+                            "Database performance optimization: deep refactoring of queries and schema to handle large data volumes, accelerating data retrieval and reducing server load.",
+                            "Code quality improvement: modernizing legacy codebase, enhancing readability and maintainability, introducing unit and integration tests for critical modules.",
+                            "CI/CD automation: setting up and maintaining continuous integration and delivery pipelines, automating build and deployment processes to speed up releases."
+                        ]
+                    }
+                ],
+                "stack": "Javascript, Typescript, Postgres, Prisma, TimescaleDB, Git, Docker, Kubernetes, Node.js, Nest.js, Kafka, Socket.io, Redis, Jest, Supertest"
+            },
+            {
+                "company": "EdgeCenter",
+                "position": "Senior Fullstack Developer",
+                "period": "January 2023 — October 2024 (1 year and 10 months)",
+                "projectUrl": "https://edgeconf.ru/new",
+                "subSections": [
+                    {
+                        "heading": "Development of a high-load video conferencing system",
+                        "bullets": [
+                            "Project management, task design and planning, sprint management.",
+                            "Architecture design including frontend and backend components.",
+                            "Design and implementation of a high-load application.",
+                            "Codebase refactoring, improved code readability, test coverage.",
+                            "CI/CD process management.",
+                            "Conducting interviews and onboarding new team members."
+                        ]
+                    }
+                ],
+                "stack": "Javascript, Typescript, Vue.js, Vuex, Scss, WebRTC, Mediasoup, Vite, Postgres, Clickhouse, TypeORM, Git, Docker, Kubernetes, Node.js, Nest.js, RabbitMQ, Socket.io, Redis, Jest, Vue testing library, Yandex Tracker"
+            },
+            {
+                "company": "Central Bank of Russia",
+                "position": "Middle Fullstack Developer",
+                "period": "October 2021 — December 2022 (1 year and 3 months)",
+                "subSections": [
+                    {
+                        "heading": "Development of a chatbot for Central Bank of Russia employees",
+                        "bullets": [
+                            "Cross-browser, responsive layout development.",
+                            "Design and implementation of a heavily loaded application with high request volume.",
+                            "Legacy codebase refactoring.",
+                            "Gaining experience with training models on existing knowledge bases.",
+                            "Database table design and complex SQL query optimization."
+                        ]
+                    }
+                ],
+                "stack": "Python, Javascript, Typescript, React, Redux, Node.js, Express, Socket.io, Redis, MSSQL, Sequelize, Jest, Three.js, Less, Jira, Git, Kubernetes"
+            },
+            {
+                "company": "IT-Prom",
+                "position": "Junior Fullstack Developer",
+                "period": "May 2020 — September 2021 (1 year and 5 months)",
+                "subSections": [
+                    {
+                        "heading": "Enterprise software development including authorization, storage, and large-scale data management",
+                        "bullets": [
+                            "Designing logic for high-load system operations.",
+                            "Responsive and cross-browser layout development.",
+                            "Migrating existing application from Knockout.js to React.",
+                            "Legacy codebase refactoring."
+                        ]
+                    }
+                ],
+                "stack": "Javascript, Typescript, React, Redux, Knockout.js, Scss, MongoDB, Mongoose, Node.js, Express, Git"
+            }
+        ]
+    }
+}

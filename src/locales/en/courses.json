@@ -1,0 +1,23 @@
+{
+    "courses": {
+        "ariaLabel": "Additional Courses",
+        "heading": "additional courses",
+        "entries": [
+            {
+                "provider": "JAVASCRIPT.RU 2022",
+                "name": "Application Architecture Intensive",
+                "certificate": "/slides/education/certificate1.png"
+            },
+            {
+                "provider": "JAVASCRIPT.RU 2021",
+                "name": "TypeScript Intensive",
+                "certificate": "/slides/education/certificate2.png"
+            },
+            {
+                "provider": "GEEKBRAINS 2020",
+                "name": "Javascript Level 2",
+                "certificate": "/slides/education/certificate3.png"
+            }
+        ]
+    }
+}

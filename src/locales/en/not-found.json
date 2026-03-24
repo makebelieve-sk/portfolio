@@ -1,0 +1,8 @@
+{
+    "notFoundPage": {
+        "code": "404",
+        "title": "Page not found",
+        "description": "There is no page at this address. It may have been moved or the link is outdated.",
+        "home": "Back to home"
+    }
+}

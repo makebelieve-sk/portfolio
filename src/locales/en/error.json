@@ -1,0 +1,9 @@
+{
+    "errorPage": {
+        "title": "Something went wrong",
+        "descriptionLine1": "An unexpected error occurred.",
+        "descriptionLine2": "You can try again or return to the home page.",
+        "retry": "Try again",
+        "home": "Back to home"
+    }
+}

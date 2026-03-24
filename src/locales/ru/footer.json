@@ -1,0 +1,12 @@
+{
+    "footer": {
+        "ariaLabel": "Контактная информация",
+        "phoneLabel": "Телефон",
+        "emailLabel": "Электронная почта",
+        "qrTelegramAlt": "QR-код Telegram",
+        "qrVkAlt": "QR-код ВКонтакте",
+        "qrGithubAlt": "QR-код GitHub",
+        "qrGitlabAlt": "QR-код GitLab",
+        "qrLinkedinAlt": "QR-код LinkedIn"
+    }
+}

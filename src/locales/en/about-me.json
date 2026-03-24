@@ -1,0 +1,37 @@
+{
+    "aboutMe": {
+        "ariaLabel": "Resume and about me",
+        "resumeHeading": "RESUME",
+        "aboutHeading": "about me",
+        "labelEmploymentType": "Employment\ntype:",
+        "labelWorkFormat": "Work\nformat:",
+        "labelLocation": "Current\nlocation",
+        "labelPosition": "Role:",
+        "labelCommercialExp": "Commercial\nexperience:",
+        "valueEmploymentType": "Full-time\nemployment",
+        "valueWorkFormat": "Remote",
+        "valueLocation": "Russia, Yekaterinburg\nGMT+5",
+        "valuePosition": "Senior Fullstack\ndeveloper",
+        "valueCommercialExp": "6 years",
+        "summaryCommerce": "I've worked on e‑commerce sites, various admin panels, high‑load systems, microservice architecture, and blockchain integrations.",
+        "architectureLeadIn": "I've contributed to the architecture of projects such as:",
+        "architectureList": [
+            "Messenger",
+            "Chatbot",
+            "Video conferencing system",
+            "Big data platform",
+            "Prediction markets app (web / mobile / Telegram mini app)",
+            "Crypto service with personalized ai-sdk recommendations (as an MCP server) analyzing exchange accounts (Bybit / Coinbase / Binance) and third‑party data (Coingecko, Messari, Defillama, Coinmarketcap). Smart contracts, native Solidity contracts, wallet connect and operations."
+        ],
+        "bioOnBlue": "I've been involved in the full product lifecycle — from idea to a working MVP.\n\nI've maintained and extended existing services.\n\nI aim for clean, readable code (in the spirit of Robert C. Martin) and cover it with unit, integration, and e2e tests.\n\nI mentor others, run interviews, and onboard new developers.\n\nI'm responsible, goal‑oriented, friendly, attentive, and continuously self‑taught.\n\nI'm open to complex, interesting challenges.",
+        "petProjectsIntro": "Below is a list of personal projects I've built in my spare time to sharpen skills and deepen my understanding of the technologies I use. Repos are open, continuously improved, and covered with tests. Each one reflects the quality of my code:",
+        "petNpmReposTitle": "List of npm repositories",
+        "petNpmReposBodyBefore": "A set of npm packages that streamline how I work with technologies I use often. They're also published on the ",
+        "petNpmReposRegistryLinkLabel": "npm registry",
+        "petNpmReposBodyAfter": ".",
+        "petCryptoTitle": "Crypto project",
+        "petCryptoBody": "Wallet connection, web3, smart contract events, JSONRpcProvider, WebSocket RPC provider events. Internal balance in internal tokens (without listing), parameterized NFT minting, selling NFTs/collections at fixed price or auction, NFT transfers and downloads. ERC‑20 / ERC‑721. Microservice backend architecture.",
+        "petMessengerTitle": "Messenger",
+        "petMessengerBody": "One of my first pet projects — a messenger. User profiles, private and public chats. Monolithic architecture."
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "courses": {
+        "ariaLabel": "Дополнительные курсы",
+        "heading": "дополнительные курсы",
+        "entries": [
+            {
+                "provider": "JAVASCRIPT.RU 2022",
+                "name": "Интенсив по архитектуре приложений",
+                "certificate": "/slides/education/certificate1.png"
+            },
+            {
+                "provider": "JAVASCRIPT.RU 2021",
+                "name": "Интенсив по Typescript",
+                "certificate": "/slides/education/certificate2.png"
+            },
+            {
+                "provider": "GEEKBRAINS 2020",
+                "name": "Javascript уровень 2",
+                "certificate": "/slides/education/certificate3.png"
+            }
+        ]
+    }
+}

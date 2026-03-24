@@ -1,0 +1,18 @@
+{
+    "meta": {
+        "title": "Портфолио — Скрябин Алексей"
+    },
+    "hero": {
+        "portfolioHeading": "ПОРТФОЛИО",
+        "nameLine": "Скрябин Алексей",
+        "roleBadgeLine1": "Senior Fullstack",
+        "roleBadgeLine2": "разработчик"
+    },
+    "language": {
+        "labelRu": "Русский",
+        "labelEn": "Английский"
+    },
+    "header": {
+        "downloadResumePdfAria": "Скачать резюме (PDF)"
+    }
+}

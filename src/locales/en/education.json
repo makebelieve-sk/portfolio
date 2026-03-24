@@ -1,0 +1,22 @@
+{
+    "education": {
+        "ariaLabel": "Education",
+        "heading": "education",
+        "university": "Ural Federal University named after the first President of Russia B.N. Yeltsin",
+        "institute": "Institute of Radio Electronics and Information Technologies · Department of Video Analysis and Big Data",
+        "degrees": [
+            {
+                "year": "2026 · PhD",
+                "specialty": "Management in Organizational\nSystems"
+            },
+            {
+                "year": "2022 · Master's Degree",
+                "specialty": "IT Innovations in Business"
+            },
+            {
+                "year": "2020 · Bachelor's Degree",
+                "specialty": "Management in Technical\nSystems"
+            }
+        ]
+    }
+}

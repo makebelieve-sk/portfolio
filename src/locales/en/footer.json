@@ -1,0 +1,12 @@
+{
+    "footer": {
+        "ariaLabel": "Contact information",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "qrTelegramAlt": "Telegram QR code",
+        "qrVkAlt": "VKontakte QR code",
+        "qrGithubAlt": "GitHub QR code",
+        "qrGitlabAlt": "GitLab QR code",
+        "qrLinkedinAlt": "LinkedIn QR code"
+    }
+}
