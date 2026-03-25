@@ -42,7 +42,7 @@ export default function Courses() {
                 <h2
                     className="pl-[21px] font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:pl-[10cqw]"
                     style={{
-                        paddingTop: "5.833cqw",
+                        paddingTop: "clamp(32px, 5.833cqw, 7rem)",
                         fontSize: "clamp(46px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
@@ -84,16 +84,22 @@ export default function Courses() {
                                     <div
                                         className="flex flex-col items-center justify-start text-center md:items-start md:text-left"
                                         style={{
-                                            fontSize: "clamp(0.375rem, 1.46cqw, 1.75rem)",
+                                            fontSize: "clamp(10px, 1.46cqw, 1.75rem)",
                                             minHeight: "4em",
                                         }}
                                     >
-                                        <p className="font-bold uppercase leading-[1.21] text-[#0F3987]">
+                                        <p
+                                            className="font-bold uppercase leading-[1.21] text-[#0F3987]"
+                                            style={{
+                                                fontSize: "clamp(10px, 1.46cqw, 1.75rem)",
+                                            }}
+                                        >
                                             {entry.provider}
                                         </p>
                                         <p
                                             className="font-medium leading-[1.21] text-[#0F3987]"
                                             style={{
+                                                fontSize: "clamp(9px, 1.46cqw, 1.75rem)",
                                                 marginTop: "clamp(2px, 0.521cqw, 10px)",
                                             }}
                                         >

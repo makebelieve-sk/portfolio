@@ -34,7 +34,7 @@ export default function Experience() {
                 <h2
                     className="pl-[18px] font-[family-name:var(--font-heading)] font-normal lowercase leading-[0.886] tracking-[0.02em] text-transparent md:pl-[10.208cqw] md:leading-none"
                     style={{
-                        paddingTop: "6.354cqw",
+                        paddingTop: "clamp(35px, 6.354cqw, 7.625rem)",
                         fontSize: "clamp(70px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}

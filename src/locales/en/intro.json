@@ -14,7 +14,11 @@
     },
     "header": {
         "downloadResumePdfAria": "Download resume (PDF)",
-        "downloadResumePdfError": "Couldn't download the PDF. Please try again later."
+        "downloadResumePdfError": "Couldn't download the PDF. Please try again later.",
+        "downloadConfirmTitle": "Download Resume",
+        "downloadConfirmMessage": "Download resume in PDF format?",
+        "downloadConfirmButton": "Download",
+        "downloadCancelButton": "Cancel"
     },
     "scrollToTop": {
         "label": "Up"

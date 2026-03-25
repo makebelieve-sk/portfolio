@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type FocusEvent } from "react";
 
 import { useLocale } from "@/providers/locale-provider";
+import { ANIM_MS } from "@/utils/constants";
 
 export default function SiteHeader() {
     const { locale, setLocale, t } = useLocale();
@@ -15,9 +16,24 @@ export default function SiteHeader() {
     }, []);
 
     const [downloading, setDownloading] = useState(false);
+    const [confirmOpen, setConfirmOpen] = useState(false);
+    const [confirmVisible, setConfirmVisible] = useState(false);
+    const confirmTimerRef = useRef<ReturnType<typeof setTimeout>>(null);
+
+    const openConfirm = useCallback(() => {
+        if (confirmTimerRef.current) clearTimeout(confirmTimerRef.current);
+        setConfirmOpen(true);
+        requestAnimationFrame(() => setConfirmVisible(true));
+    }, []);
+
+    const closeConfirm = useCallback(() => {
+        setConfirmVisible(false);
+        confirmTimerRef.current = setTimeout(() => setConfirmOpen(false), ANIM_MS);
+    }, []);
 
     const handleDownloadResume = useCallback(async () => {
         if (downloading) return;
+        closeConfirm();
         setDownloading(true);
         try {
             const res = await fetch(`/api/pdf?locale=${locale}`);
@@ -37,16 +53,19 @@ export default function SiteHeader() {
         } finally {
             setDownloading(false);
         }
-    }, [locale, downloading, t]);
+    }, [locale, downloading, t, closeConfirm]);
 
     useEffect(() => {
-        if (!menuOpen) return;
+        if (!menuOpen && !confirmOpen) return;
         const onKeyDown = (e: KeyboardEvent) => {
-            if (e.key === "Escape") closeMenu();
+            if (e.key === "Escape") {
+                if (confirmOpen) closeConfirm();
+                else if (menuOpen) closeMenu();
+            }
         };
         window.addEventListener("keydown", onKeyDown);
         return () => window.removeEventListener("keydown", onKeyDown);
-    }, [menuOpen, closeMenu]);
+    }, [menuOpen, closeMenu, confirmOpen, closeConfirm]);
 
     useEffect(() => {
         if (!menuOpen) return;
@@ -70,7 +89,7 @@ export default function SiteHeader() {
             <div className="pointer-events-auto flex items-start gap-[clamp(0.75rem,1.5vw,1.5rem)] font-heading text-[clamp(1.25rem,1.98vw,2.375rem)] tracking-normal text-white md:text-[clamp(0.875rem,1.98vw,2.375rem)]">
                 <button
                     type="button"
-                    onClick={handleDownloadResume}
+                    onClick={openConfirm}
                     disabled={downloading}
                     className="shrink-0 cursor-pointer border-0 bg-transparent p-0 opacity-95 transition-opacity hover:opacity-100 disabled:cursor-wait disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/80"
                     aria-label={t.header.downloadResumePdfAria}
@@ -197,6 +216,50 @@ export default function SiteHeader() {
                     </div>
                 </div>
             </div>
+
+            {confirmOpen && (
+                <div
+                    className={`fixed inset-0 z-[70] flex items-center justify-center backdrop-blur-sm transition-[background-color,opacity,visibility] ease-out ${
+                        confirmVisible
+                            ? "visible bg-black/60 opacity-100"
+                            : "invisible bg-black/0 opacity-0"
+                    }`}
+                    style={{ transitionDuration: `${ANIM_MS}ms` }}
+                    onClick={(e) => {
+                        if (e.target === e.currentTarget) closeConfirm();
+                    }}
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label={t.header.downloadConfirmTitle}
+                >
+                    <div
+                        className={`mx-4 w-full max-w-sm rounded-2xl border border-white/20 bg-[#001f3f]/95 px-8 py-7 text-center font-sans shadow-2xl backdrop-blur-md transition-transform ease-out ${
+                            confirmVisible ? "scale-100" : "scale-90"
+                        }`}
+                        style={{ transitionDuration: `${ANIM_MS}ms` }}
+                    >
+                        <p className="text-lg font-semibold text-white">
+                            {t.header.downloadConfirmMessage}
+                        </p>
+                        <div className="mt-6 flex gap-3">
+                            <button
+                                type="button"
+                                onClick={closeConfirm}
+                                className="flex-1 cursor-pointer rounded-xl border border-white/30 bg-transparent py-2.5 text-base font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-white"
+                            >
+                                {t.header.downloadCancelButton}
+                            </button>
+                            <button
+                                type="button"
+                                onClick={handleDownloadResume}
+                                className="flex-1 cursor-pointer rounded-xl border-0 bg-white py-2.5 text-base font-semibold text-[#0F3987] transition-colors hover:bg-white/90"
+                            >
+                                {t.header.downloadConfirmButton}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </header>
     );
 }

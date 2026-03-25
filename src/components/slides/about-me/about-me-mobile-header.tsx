@@ -91,7 +91,11 @@ export default function AboutMeMobileHeader() {
             {/* Metadata grid */}
             <div
                 className="relative grid grid-cols-2"
-                style={{ marginLeft: "1vw", marginTop: "3.65vw", gap: "2vw 3vw" }}
+                style={{
+                    marginLeft: "1vw",
+                    marginTop: "3.65vw",
+                    gap: "clamp(14px, 4.5vw, 2.5rem) 3vw",
+                }}
             >
                 <div>
                     <p

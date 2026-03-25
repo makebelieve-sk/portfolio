@@ -16,7 +16,7 @@ export default function Education() {
                 <h2
                     className="pl-[18px] font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:pl-[10cqw]"
                     style={{
-                        paddingTop: "5.833cqw",
+                        paddingTop: "clamp(32px, 5.833cqw, 7rem)",
                         fontSize: "clamp(65px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}

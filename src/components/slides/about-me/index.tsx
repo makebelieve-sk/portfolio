@@ -63,7 +63,7 @@ export default function AboutMe() {
                         className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:hidden"
                         style={{
                             fontSize: "clamp(70px, 12.82vw, 6.125rem)",
-                            paddingTop: "5.833cqw",
+                            paddingTop: "clamp(32px, 5.833cqw, 7rem)",
                             marginBottom: "clamp(1.5rem, 5.208cqw, 6.25rem)",
                             ...gradientClip,
                         }}

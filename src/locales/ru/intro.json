@@ -14,7 +14,11 @@
     },
     "header": {
         "downloadResumePdfAria": "Скачать резюме (PDF)",
-        "downloadResumePdfError": "Не удалось скачать PDF. Попробуйте позже."
+        "downloadResumePdfError": "Не удалось скачать PDF. Попробуйте позже.",
+        "downloadConfirmTitle": "Скачать резюме",
+        "downloadConfirmMessage": "Скачать резюме в PDF формате?",
+        "downloadConfirmButton": "Скачать",
+        "downloadCancelButton": "Отмена"
     },
     "scrollToTop": {
         "label": "Наверх"

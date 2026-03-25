@@ -51,7 +51,7 @@ export default function AboutMeSummary() {
                     aria-hidden
                 />
                 <div
-                    className="relative z-10 whitespace-pre-line py-[clamp(1.25rem,4.375cqw,5.25rem)] font-semibold leading-[1.14] text-white"
+                    className="relative z-10 whitespace-pre-line py-[clamp(24px,4.375cqw,5.25rem)] font-semibold leading-[1.14] text-white"
                     style={{ fontSize: "clamp(11px, 1.72cqw, 2.0625rem)" }}
                 >
                     {m.bioOnBlue.split("\n\n").map((para, i) => (
