@@ -32,11 +32,10 @@ export default function Experience() {
                 style={{ containerType: "inline-size" }}
             >
                 <h2
-                    className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent"
+                    className="pl-[18px] font-[family-name:var(--font-heading)] font-normal lowercase leading-[0.886] tracking-[0.02em] text-transparent md:pl-[10.208cqw] md:leading-none"
                     style={{
-                        paddingLeft: "10.208cqw",
                         paddingTop: "6.354cqw",
-                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
+                        fontSize: "clamp(70px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
@@ -44,9 +43,8 @@ export default function Experience() {
                 </h2>
 
                 <div
+                    className="pl-[20px] pr-[16px] md:pl-[10.573cqw] md:pr-[5cqw]"
                     style={{
-                        paddingLeft: "10.573cqw",
-                        paddingRight: "5cqw",
                         paddingBottom: "clamp(2rem, 6.354cqw, 7.625rem)",
                     }}
                 >

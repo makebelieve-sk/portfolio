@@ -113,13 +113,13 @@ export default function SiteFooter() {
             {/* Mobile footer */}
             <div
                 className="bg-[linear-gradient(135deg,#0F3886_0%,#01215F_100%)] md:hidden"
-                style={{ padding: "clamp(1.25rem, 5.34vw, 2.5rem) clamp(1rem, 4vw, 2rem)" }}
+                style={{ padding: "clamp(10px, 3.4vw, 2.5rem) clamp(1rem, 4vw, 2rem)" }}
             >
-                <div className="flex flex-col items-center gap-[clamp(0.5rem,2.08vw,1rem)]">
+                <div className="flex flex-col items-center gap-[clamp(0.25rem,1.5vw,1rem)]">
                     <a
                         href={PHONE_HREF}
                         className="flex items-center gap-[clamp(0.25rem,1vw,0.5rem)] font-medium text-white no-underline transition-opacity hover:opacity-80"
-                        style={{ fontSize: "clamp(0.625rem, 2.5vw, 1.125rem)", lineHeight: 1.33 }}
+                        style={{ fontSize: "clamp(11px, 3.44vw, 1.125rem)", lineHeight: 1.33 }}
                         aria-label={`${f.phoneLabel}: ${PHONE}`}
                     >
                         <Image
@@ -135,7 +135,7 @@ export default function SiteFooter() {
                     <a
                         href={EMAIL_HREF}
                         className="flex items-center gap-[clamp(0.25rem,1vw,0.5rem)] font-medium text-white no-underline transition-opacity hover:opacity-80"
-                        style={{ fontSize: "clamp(0.625rem, 2.5vw, 1.125rem)", lineHeight: 1.33 }}
+                        style={{ fontSize: "clamp(11px, 3.44vw, 1.125rem)", lineHeight: 1.33 }}
                         aria-label={`${f.emailLabel}: ${EMAIL}`}
                     >
                         <Image
@@ -149,14 +149,14 @@ export default function SiteFooter() {
                         {EMAIL}
                     </a>
                 </div>
-                <div className="mt-[clamp(0.75rem,3.25vw,1.5rem)] flex items-center justify-center gap-[clamp(0.375rem,1.56vw,0.75rem)]">
+                <div className="mt-[clamp(0.5rem,2.5vw,1.5rem)] flex items-center justify-center gap-[clamp(0.375rem,1.56vw,0.75rem)]">
                     {QR_CODES.map((qr) => (
                         <a
                             key={qr.src}
                             href={qr.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ width: "clamp(2.5rem, 8.46vw, 4.06rem)" }}
+                            style={{ width: "clamp(23px, 7.19vw, 4.06rem)" }}
                             aria-label={f[qr.altKey]}
                         >
                             <Image
@@ -165,7 +165,7 @@ export default function SiteFooter() {
                                 width={316}
                                 height={316}
                                 className="h-auto w-full rounded-[2px] object-contain"
-                                sizes="(min-width: 768px) 8vw, 8.46vw"
+                                sizes="(min-width: 768px) 8vw, 7.19vw"
                             />
                         </a>
                     ))}

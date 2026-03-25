@@ -66,7 +66,7 @@ export default function SiteHeader() {
     };
 
     return (
-        <header className="absolute inset-x-0 top-0 z-50 flex justify-end pl-5 pr-[10.417vw] pt-6 sm:pl-8 sm:pt-8 md:px-[clamp(2.5rem,10.5vw,12.5rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
+        <header className="absolute inset-x-0 top-0 z-50 flex justify-end pl-5 pr-[5vw] pt-6 sm:pl-8 sm:pt-8 md:px-[clamp(2.5rem,10.5vw,12.5rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
             <div className="pointer-events-auto flex items-start gap-[clamp(0.75rem,1.5vw,1.5rem)] font-heading text-[clamp(1.25rem,1.98vw,2.375rem)] tracking-normal text-white md:text-[clamp(0.875rem,1.98vw,2.375rem)]">
                 <button
                     type="button"
@@ -99,8 +99,9 @@ export default function SiteHeader() {
                     >
                         {locale.toUpperCase()}
                     </button>
+                    {/* Desktop dropdown */}
                     <div
-                        className={`absolute right-0 top-full z-10 pt-1 ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+                        className={`absolute right-0 top-full z-10 hidden pt-1 md:block ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
                         inert={!menuOpen ? true : undefined}
                     >
                         <div
@@ -138,6 +139,52 @@ export default function SiteHeader() {
                                     padding:
                                         "clamp(0.5rem, 0.7vw, 0.875rem) clamp(1rem, 1.4vw, 1.75rem)",
                                 }}
+                                aria-current={locale === "en" ? "true" : undefined}
+                                onClick={() => {
+                                    setLocale("en");
+                                    closeMenu();
+                                }}
+                            >
+                                {t.language.labelEn}
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Mobile modal */}
+                    <div
+                        className={`fixed inset-0 z-[60] flex items-center justify-center backdrop-blur-sm transition-[background-color,opacity,visibility] duration-200 md:hidden ${
+                            menuOpen
+                                ? "visible bg-black/50 opacity-100"
+                                : "invisible bg-black/0 opacity-0"
+                        }`}
+                        inert={!menuOpen ? true : undefined}
+                        onClick={(e) => {
+                            if (e.target === e.currentTarget) closeMenu();
+                        }}
+                    >
+                        <div
+                            className={`min-w-[16rem] rounded-2xl border border-white/20 bg-[#001f3f]/95 font-sans shadow-2xl backdrop-blur-md transition-transform duration-200 ${
+                                menuOpen ? "scale-100" : "scale-90"
+                            }`}
+                            style={{ padding: "clamp(1.25rem, 5vw, 2rem)" }}
+                            role="menu"
+                        >
+                            <button
+                                type="button"
+                                role="menuitem"
+                                className={`block w-full cursor-pointer rounded-xl py-3 text-center text-lg font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-white ${locale === "ru" ? "border border-white/40" : ""}`}
+                                aria-current={locale === "ru" ? "true" : undefined}
+                                onClick={() => {
+                                    setLocale("ru");
+                                    closeMenu();
+                                }}
+                            >
+                                {t.language.labelRu}
+                            </button>
+                            <button
+                                type="button"
+                                role="menuitem"
+                                className={`mt-2 block w-full cursor-pointer rounded-xl py-3 text-center text-lg font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-white ${locale === "en" ? "border border-white/40" : ""}`}
                                 aria-current={locale === "en" ? "true" : undefined}
                                 onClick={() => {
                                     setLocale("en");

@@ -28,7 +28,7 @@ export default function ExperienceSubSection({
                 <p
                     className="font-semibold leading-[1.267] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                        fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
                     }}
                 >
                     {section.heading}
@@ -39,7 +39,7 @@ export default function ExperienceSubSection({
                 <p
                     className="font-medium leading-[1.267] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                        fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
                         marginTop: "heading" in section && section.heading ? "0.25em" : undefined,
                     }}
                 >
@@ -49,9 +49,9 @@ export default function ExperienceSubSection({
 
             {"bullets" in section && section.bullets && (
                 <ul
-                    className="list-none p-0 font-medium leading-[1.21] text-[#0F3987]"
+                    className="list-none p-0 font-medium leading-[1.22] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.6875rem, 1.41cqw, 1.6875rem)",
+                        fontSize: "clamp(9px, 1.41cqw, 1.6875rem)",
                         marginTop:
                             ("heading" in section && section.heading) ||
                             ("description" in section && section.description)

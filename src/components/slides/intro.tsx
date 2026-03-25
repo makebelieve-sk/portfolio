@@ -18,13 +18,13 @@ export default function Intro() {
                 aria-hidden
             />
 
-            <div className="relative z-10 flex min-w-0 flex-1 flex-col pb-6 pl-[10.417vw] pr-[5vw] pt-6 sm:pb-8 sm:pt-8 md:px-[clamp(2.5rem,10vw,12rem)] md:pb-[clamp(2rem,4.8vw,5.75rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
+            <div className="relative z-10 flex min-w-0 flex-1 flex-col pb-6 pl-[5.625vw] pr-[5vw] pt-6 sm:pb-8 sm:pt-8 md:px-[clamp(2.5rem,10vw,12rem)] md:pb-[clamp(2rem,4.8vw,5.75rem)] md:pt-[clamp(2rem,4.8vw,5.75rem)]">
                 <div className="relative z-10 flex min-w-0 flex-col items-start">
-                    <h1 className="text-[clamp(2.125rem,14.3vw,17.15rem)] font-normal leading-[1] tracking-[0.02em]">
+                    <h1 className="text-[clamp(2.75rem,14.3vw,17.15rem)] font-normal leading-[1] tracking-[0.02em]">
                         {t.hero.portfolioHeading}
                     </h1>
 
-                    <p className="mt-[clamp(0.75rem,3.07vw,3.7rem)] text-[clamp(0.875rem,3.65vw,4.375rem)] font-medium leading-[1.333]">
+                    <p className="mt-[clamp(0.75rem,3.07vw,3.7rem)] text-[clamp(16px,3.65vw,4.375rem)] font-medium leading-[1.333]">
                         {t.hero.nameLine}
                     </p>
 
@@ -40,7 +40,7 @@ export default function Intro() {
                                     "clamp(0.75rem, 1.8vw, 2.2rem) clamp(0.75rem, 2.03vw, 2.44rem) clamp(0.75rem, 2.2vw, 2.6rem) clamp(1.5rem, 3.85vw, 4.63rem)",
                             }}
                         >
-                            <span className="block text-[clamp(0.75rem,3.18vw,3.815rem)] leading-[0.94] text-[#072B70]">
+                            <span className="block text-[clamp(15px,3.18vw,3.815rem)] leading-[1.067] text-[#072B70]">
                                 {t.hero.roleBadgeLine1}
                                 <br />
                                 {t.hero.roleBadgeLine2}
@@ -59,7 +59,7 @@ export default function Intro() {
                     </div>
                 </div>
 
-                <div className="absolute right-[12vw] top-[36%] w-[34.1vw] md:right-[8vw] md:top-[37%] md:w-[37vw] lg:top-[34.4%] lg:w-[40.5vw]">
+                <div className="absolute right-[clamp(0vw,calc(-6.75rem_+_33.5vw),12vw)] top-[36%] w-[34.1vw] md:right-[8vw] md:top-[37%] md:w-[37vw] lg:top-[34.4%] lg:w-[40.5vw]">
                     <Image
                         src="/slides/intro/hero.png"
                         alt=""

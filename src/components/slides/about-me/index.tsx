@@ -58,17 +58,11 @@ export default function AboutMe() {
                     <AboutMeMobileHeader />
                 </div>
 
-                <div
-                    className="pb-[clamp(2rem,5.208cqw,6.25rem)] text-[#0F3987]"
-                    style={{
-                        paddingLeft: "clamp(1.25rem, 12.24vw, 10.417cqw)",
-                        paddingRight: "clamp(1.25rem, 8.72vw, 6.667cqw)",
-                    }}
-                >
+                <div className="pb-[clamp(2rem,5.208cqw,6.25rem)] pl-[20px] pr-[15px] text-[#0F3987] md:pl-[10.417cqw] md:pr-[6.667cqw]">
                     <h2
                         className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:hidden"
                         style={{
-                            fontSize: "clamp(2.375rem, 12.82vw, 6.125rem)",
+                            fontSize: "clamp(70px, 12.82vw, 6.125rem)",
                             paddingTop: "5.833cqw",
                             marginBottom: "clamp(1.5rem, 5.208cqw, 6.25rem)",
                             ...gradientClip,

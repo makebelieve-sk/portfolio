@@ -66,7 +66,7 @@ export default function ExperienceEntry({
                 <span
                     className="block font-bold uppercase leading-[1.21] text-[#0F3987]"
                     style={{
-                        fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                        fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
                         marginLeft: "clamp(0.5rem, 2.24cqw, 2.688rem)",
                     }}
                 >
@@ -96,7 +96,7 @@ export default function ExperienceEntry({
                         <p
                             className="font-medium leading-[1.21] text-[#0F3987]"
                             style={{
-                                fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                                fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
                                 marginTop: "clamp(1rem, 2.188cqw, 2.625rem)",
                             }}
                         >
@@ -120,7 +120,7 @@ export default function ExperienceEntry({
                     <p
                         className="font-medium leading-[1.31] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                            fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
                             marginTop:
                                 "projectUrl" in entry && entry.projectUrl
                                     ? "clamp(1rem, 3.958cqw, 4.75rem)"

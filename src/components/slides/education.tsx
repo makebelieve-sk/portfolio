@@ -14,27 +14,21 @@ export default function Education() {
                 style={{ containerType: "inline-size" }}
             >
                 <h2
-                    className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent"
+                    className="pl-[18px] font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:pl-[10cqw]"
                     style={{
-                        paddingLeft: "10cqw",
                         paddingTop: "5.833cqw",
-                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
+                        fontSize: "clamp(65px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
                     {m.heading}
                 </h2>
 
-                <div
-                    style={{
-                        paddingLeft: "10.3125cqw",
-                        paddingRight: "10.729cqw",
-                    }}
-                >
+                <div className="pl-[19px] pr-[15px] md:pl-[10.3125cqw] md:pr-[10.729cqw]">
                     <p
-                        className="font-bold uppercase leading-[1.25] text-[#0F3987]"
+                        className="font-bold uppercase leading-[1.083] text-[#0F3987]"
                         style={{
-                            fontSize: "clamp(0.75rem, 1.56cqw, 1.875rem)",
+                            fontSize: "clamp(12px, 1.56cqw, 1.875rem)",
                             marginTop: "clamp(1.5rem, 2.917cqw, 3.5rem)",
                         }}
                     >
@@ -42,9 +36,9 @@ export default function Education() {
                     </p>
 
                     <p
-                        className="font-medium leading-[1.08] text-[#0F3987]"
+                        className="whitespace-pre-line font-medium leading-[1.083] text-[#0F3987] md:whitespace-normal"
                         style={{
-                            fontSize: "clamp(0.75rem, 1.46cqw, 1.75rem)",
+                            fontSize: "clamp(12px, 1.46cqw, 1.75rem)",
                             marginTop: "clamp(0.5rem, 1.146cqw, 1.375rem)",
                         }}
                     >
@@ -52,23 +46,20 @@ export default function Education() {
                     </p>
 
                     <div
-                        className="flex flex-wrap md:flex-nowrap"
+                        className="flex flex-col md:flex-row md:flex-nowrap"
                         style={{
                             marginTop: "clamp(1.25rem, 4.0625cqw, 4.875rem)",
                             paddingBottom: "clamp(1.5rem, 7.552cqw, 9.063rem)",
-                            gap: "clamp(0.75rem, 0, 0) 0",
+                            gap: "clamp(1rem, 5vw, 1.5rem) 0",
                         }}
                     >
                         {m.degrees.map((degree, i) => (
                             <div key={i} className="flex min-w-0">
                                 {i > 0 && (
                                     <div
-                                        className="shrink-0"
+                                        className="hidden shrink-0 items-center justify-center md:flex"
                                         style={{
                                             width: "clamp(1rem, 7.604cqw, 9.125rem)",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
                                         }}
                                     >
                                         <div
@@ -81,26 +72,20 @@ export default function Education() {
                                         />
                                     </div>
                                 )}
-                                <div
-                                    className="flex min-w-0 items-start justify-center"
-                                    style={{
-                                        width: "clamp(4rem, 21.25cqw, 25.5rem)",
-                                        flexShrink: 0,
-                                    }}
-                                >
+                                <div className="min-w-0 md:flex md:w-[clamp(4rem,21.25cqw,25.5rem)] md:shrink-0 md:items-start md:justify-center">
                                     <div className="min-w-0">
                                         <p
                                             className="font-bold uppercase leading-[1.21] text-[#0F3987]"
                                             style={{
-                                                fontSize: "clamp(0.5rem, 1.46cqw, 1.75rem)",
+                                                fontSize: "clamp(10px, 1.46cqw, 1.75rem)",
                                             }}
                                         >
                                             {degree.year}
                                         </p>
                                         <p
-                                            className="whitespace-pre-line font-medium leading-[1.21] text-[#0F3987]"
+                                            className="whitespace-nowrap font-medium leading-[1.11] text-[#0F3987] md:whitespace-pre-line"
                                             style={{
-                                                fontSize: "clamp(0.5rem, 1.46cqw, 1.75rem)",
+                                                fontSize: "clamp(9px, 1.46cqw, 1.75rem)",
                                                 marginTop: "clamp(2px, 0.521cqw, 0.625rem)",
                                             }}
                                         >

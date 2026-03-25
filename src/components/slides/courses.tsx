@@ -40,11 +40,10 @@ export default function Courses() {
                 style={{ containerType: "inline-size" }}
             >
                 <h2
-                    className="font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent"
+                    className="pl-[21px] font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent md:pl-[10cqw]"
                     style={{
-                        paddingLeft: "10cqw",
                         paddingTop: "5.833cqw",
-                        fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
+                        fontSize: "clamp(46px, 11.25cqw, 13.5rem)",
                         ...gradientClip,
                     }}
                 >
@@ -52,10 +51,10 @@ export default function Courses() {
                 </h2>
 
                 <div
-                    className="flex"
+                    className="flex flex-wrap justify-center gap-[16px] md:flex-nowrap md:justify-start md:gap-0"
                     style={{
-                        paddingLeft: "10.573cqw",
-                        paddingRight: "7.5cqw",
+                        paddingLeft: "clamp(20px, 10.573cqw, 10.573cqw)",
+                        paddingRight: "clamp(15px, 7.5cqw, 7.5cqw)",
                         marginTop: "clamp(0.75rem, 3.177cqw, 3.813rem)",
                         paddingBottom: "clamp(1.5rem, 5.417cqw, 6.5rem)",
                     }}
@@ -66,7 +65,7 @@ export default function Courses() {
                             <React.Fragment key={i}>
                                 {i > 0 && (
                                     <div
-                                        className="flex shrink-0 items-center justify-center"
+                                        className="hidden shrink-0 items-center justify-center md:flex"
                                         style={{
                                             width: "clamp(0.5rem, 4.69cqw, 9rem)",
                                         }}
@@ -81,9 +80,9 @@ export default function Courses() {
                                         />
                                     </div>
                                 )}
-                                <div className="flex min-w-0 flex-1 flex-col">
+                                <div className="flex w-[calc(50%-8px)] flex-col md:min-w-0 md:w-auto md:flex-1">
                                     <div
-                                        className="flex flex-col justify-start"
+                                        className="flex flex-col items-center justify-start text-center md:items-start md:text-left"
                                         style={{
                                             fontSize: "clamp(0.375rem, 1.46cqw, 1.75rem)",
                                             minHeight: "4em",
