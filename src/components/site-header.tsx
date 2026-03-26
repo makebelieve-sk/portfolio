@@ -15,7 +15,6 @@ export default function SiteHeader() {
         setMenuOpen(false);
     }, []);
 
-    const [downloading, setDownloading] = useState(false);
     const [confirmOpen, setConfirmOpen] = useState(false);
     const [confirmVisible, setConfirmVisible] = useState(false);
     const confirmTimerRef = useRef<ReturnType<typeof setTimeout>>(null);
@@ -31,29 +30,14 @@ export default function SiteHeader() {
         confirmTimerRef.current = setTimeout(() => setConfirmOpen(false), ANIM_MS);
     }, []);
 
-    const handleDownloadResume = useCallback(async () => {
-        if (downloading) return;
+    const handleDownloadResume = useCallback(() => {
         closeConfirm();
-        setDownloading(true);
-        try {
-            const res = await fetch(`/api/pdf?locale=${locale}`);
-            if (!res.ok) {
-                window.alert(t.header.downloadResumePdfError);
-                return;
-            }
-            const blob = await res.blob();
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement("a");
-            a.href = url;
-            a.download = `Skryabin_CV_${locale}.pdf`;
-            a.click();
-            URL.revokeObjectURL(url);
-        } catch {
-            window.alert(t.header.downloadResumePdfError);
-        } finally {
-            setDownloading(false);
-        }
-    }, [locale, downloading, t, closeConfirm]);
+        const fileName = locale === "ru" ? "Skryabin_A_ru.CV.pdf" : "Skryabin_A_en.CV.pdf";
+        const link = document.createElement("a");
+        link.href = `/pdf/${fileName}`;
+        link.download = fileName;
+        link.click();
+    }, [locale, closeConfirm]);
 
     useEffect(() => {
         if (!menuOpen && !confirmOpen) return;
@@ -90,8 +74,7 @@ export default function SiteHeader() {
                 <button
                     type="button"
                     onClick={openConfirm}
-                    disabled={downloading}
-                    className="shrink-0 cursor-pointer border-0 bg-transparent p-0 opacity-95 transition-opacity hover:opacity-100 disabled:cursor-wait disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/80"
+                    className="shrink-0 cursor-pointer border-0 bg-transparent p-0 opacity-95 transition-opacity hover:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/80"
                     aria-label={t.header.downloadResumePdfAria}
                 >
                     <Image
@@ -99,7 +82,7 @@ export default function SiteHeader() {
                         alt=""
                         width={100}
                         height={100}
-                        className={`h-[1.1em] w-[1.1em] object-contain md:h-[0.82em] md:w-[0.82em] ${downloading ? "animate-pulse" : ""}`}
+                        className="h-[1.1em] w-[1.1em] object-contain md:h-[0.82em] md:w-[0.82em]"
                         sizes="48px"
                     />
                 </button>
