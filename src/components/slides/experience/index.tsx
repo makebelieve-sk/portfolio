@@ -52,7 +52,7 @@ export default function Experience() {
                         const isCurrentJob = i === 0;
                         let periodLabel = entry.period;
                         if (isCurrentJob) {
-                            const totalMonths = inclusiveMonthsFromStart(new Date(2025, 7, 1));
+                            const totalMonths = inclusiveMonthsFromStart(new Date(2024, 10, 1));
                             const duration = formatDuration(locale, totalMonths, {
                                 monthOne: m.durationMonthOne,
                                 monthsMany: m.durationMonthsMany,
@@ -60,7 +60,7 @@ export default function Experience() {
                                 yearsMany: m.durationYearsMany,
                                 and: m.durationAnd,
                             });
-                            periodLabel = `${m.finamPeriodPresent} (${duration})`;
+                            periodLabel = `${m.currentPeriodPresent} (${duration})`;
                         }
                         return (
                             <ExperienceEntry

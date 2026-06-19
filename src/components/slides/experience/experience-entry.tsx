@@ -110,6 +110,7 @@ export default function ExperienceEntry({
                             section={section}
                             index={j}
                             hasIntro={"intro" in entry && Boolean(entry.intro)}
+                            stackPrefix={m.stackPrefix}
                         />
                     ))}
 
@@ -117,19 +118,21 @@ export default function ExperienceEntry({
                         <ProjectLink url={entry.projectUrl} label={m.projectLinkLabel} />
                     )}
 
-                    <p
-                        className="font-medium leading-[1.31] text-[#0F3987]"
-                        style={{
-                            fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
-                            marginTop:
-                                "projectUrl" in entry && entry.projectUrl
-                                    ? "clamp(1rem, 3.958cqw, 4.75rem)"
-                                    : "clamp(1.5rem, 5.833cqw, 7rem)",
-                        }}
-                    >
-                        {m.stackPrefix}
-                        {entry.stack}
-                    </p>
+                    {"stack" in entry && entry.stack && (
+                        <p
+                            className="font-medium leading-[1.31] text-[#0F3987]"
+                            style={{
+                                fontSize: "clamp(11px, 1.46cqw, 1.75rem)",
+                                marginTop:
+                                    "projectUrl" in entry && entry.projectUrl
+                                        ? "clamp(1rem, 3.958cqw, 4.75rem)"
+                                        : "clamp(1.5rem, 5.833cqw, 7rem)",
+                            }}
+                        >
+                            {m.stackPrefix}
+                            {entry.stack}
+                        </p>
+                    )}
                 </div>
             </div>
         </article>

@@ -1,6 +1,6 @@
 export const CANVAS_W = 1920;
 
-export const HEADER_H = 1144;
+export const HEADER_H = 1280;
 
 export function pctX(px: number) {
     return `${(px / CANVAS_W) * 100}%`;

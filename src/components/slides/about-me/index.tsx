@@ -2,7 +2,7 @@
 
 import { useLocale } from "@/providers/locale-provider";
 import { gradientClip } from "@/utils/constants";
-import { CANVAS_W, HEADER_H, hPctH, hPctY, pctX } from "@/utils/decor/canvas-pct";
+import { CANVAS_W, HEADER_H, hPctY, pctX } from "@/utils/decor/canvas-pct";
 
 import AboutMeDecor from "@/components/slides/about-me/about-me-decor";
 import AboutMeHeader from "@/components/slides/about-me/about-me-header";
@@ -27,22 +27,11 @@ export default function AboutMe() {
                 >
                     <AboutMeDecor />
 
-                    <div
-                        className="pointer-events-none absolute bg-[linear-gradient(180deg,rgba(3,38,102,0)_0%,rgba(5,57,153,1)_50%,rgba(6,76,204,0)_100%)]"
-                        style={{
-                            left: pctX(582),
-                            top: hPctY(84),
-                            width: 3,
-                            height: hPctH(580),
-                        }}
-                        aria-hidden
-                    />
-
                     <h2
                         className="absolute font-[family-name:var(--font-heading)] font-normal lowercase leading-none tracking-[0.02em] text-transparent"
                         style={{
                             left: pctX(196),
-                            top: hPctY(888),
+                            top: hPctY(1040),
                             fontSize: "clamp(2.875rem, 11.25cqw, 13.5rem)",
                             ...gradientClip,
                         }}

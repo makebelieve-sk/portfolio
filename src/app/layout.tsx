@@ -30,14 +30,14 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        default: "Portfolio — Alexey Skryabin",
-        template: "%s — Alexey Skryabin",
+        default: "Portfolio — Alexey Skriabin",
+        template: "%s — Alexey Skriabin",
     },
     description:
         "Senior fullstack developer portfolio: projects, work experience, education, and background. English and Russian.",
-    applicationName: "Portfolio — Alexey Skryabin",
-    authors: [{ name: "Alexey Skryabin", url: siteUrl }],
-    creator: "Alexey Skryabin",
+    applicationName: "Portfolio — Alexey Skriabin",
+    authors: [{ name: "Alexey Skriabin", url: siteUrl }],
+    creator: "Alexey Skriabin",
     category: "portfolio",
     robots: {
         index: true,
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
         locale: "en_US",
         alternateLocale: ["ru_RU"],
         url: siteUrl,
-        siteName: "Portfolio — Alexey Skryabin",
-        title: "Portfolio — Alexey Skryabin",
+        siteName: "Portfolio — Alexey Skriabin",
+        title: "Portfolio — Alexey Skriabin",
         description:
             "Senior fullstack developer portfolio: projects, work experience, education, and background.",
         images: [
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
                 url: "/slides/intro/hero.png",
                 width: 3198,
                 height: 2712,
-                alt: "Alexey Skryabin — portfolio",
+                alt: "Alexey Skriabin — portfolio",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Portfolio — Alexey Skryabin",
+        title: "Portfolio — Alexey Skriabin",
         description:
             "Senior fullstack developer portfolio: projects, work experience, education, and background.",
         images: ["/slides/intro/hero.png"],

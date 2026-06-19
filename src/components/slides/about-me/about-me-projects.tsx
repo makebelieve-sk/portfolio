@@ -8,7 +8,7 @@ export default function AboutMeProjects() {
 
     return (
         <div
-            className="mt-[clamp(2rem,7.396cqw,8.875rem)] font-medium leading-[1.37]"
+            className="mt-[clamp(1.5rem,5.208cqw,6.25rem)] font-medium leading-[1.37]"
             style={{ fontSize: "clamp(11px, 1.72cqw, 2.0625rem)" }}
         >
             <p className="mb-[1.37em]">{m.petProjectsIntro}</p>

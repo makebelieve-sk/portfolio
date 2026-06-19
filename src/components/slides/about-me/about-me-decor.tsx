@@ -14,7 +14,7 @@ export default function AboutMeDecor() {
                 }}
             >
                 <Image
-                    src="/slides/about-me/decor-main.png"
+                    src="/slides/resume/decor-main.png"
                     alt=""
                     width={554}
                     height={652}
@@ -31,7 +31,7 @@ export default function AboutMeDecor() {
                 }}
             >
                 <Image
-                    src="/slides/about-me/decor-1.png"
+                    src="/slides/resume/decor-1.png"
                     alt=""
                     width={512}
                     height={512}
@@ -48,7 +48,7 @@ export default function AboutMeDecor() {
                 }}
             >
                 <Image
-                    src="/slides/about-me/decor-2.png"
+                    src="/slides/resume/decor-2.png"
                     alt=""
                     width={512}
                     height={512}
@@ -65,7 +65,7 @@ export default function AboutMeDecor() {
                 }}
             >
                 <Image
-                    src="/slides/about-me/decor-3.png"
+                    src="/slides/resume/decor-3.png"
                     alt=""
                     width={512}
                     height={512}
@@ -82,7 +82,7 @@ export default function AboutMeDecor() {
                 }}
             >
                 <Image
-                    src="/slides/about-me/decor-4.png"
+                    src="/slides/resume/decor-4.png"
                     alt=""
                     width={512}
                     height={512}

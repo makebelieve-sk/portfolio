@@ -5,8 +5,8 @@
     "hero": {
         "portfolioHeading": "ПОРТФОЛИО",
         "nameLine": "Скрябин Алексей",
-        "roleBadgeLine1": "Senior Fullstack",
-        "roleBadgeLine2": "разработчик"
+        "roleBadgeLine1": "Senior Fullstack разработчик",
+        "roleBadgeLine2": "(Node.js / TypeScript / Web3)"
     },
     "language": {
         "labelRu": "Русский",

@@ -4,7 +4,7 @@
         "heading": "work experience",
         "projectLinkLabel": "Project",
         "stackPrefix": "Stack: ",
-        "finamPeriodPresent": "August 2025 — present",
+        "currentPeriodPresent": "November 2024 — present",
         "durationMonthOne": "month",
         "durationMonthsMany": "months",
         "durationYearOne": "year",
@@ -12,81 +12,49 @@
         "durationAnd": "and",
         "entries": [
             {
-                "company": "Finam",
+                "company": "Skriabin A. (Sole Proprietor) — Contract Development",
                 "position": "Senior Fullstack Developer",
                 "period": "",
-                "intro": "Participated in a dedicated product group focused on rapid prototyping and developing new ideas from concept to working MVP. As part of the team, delivered two diverse projects in the crypto and fintech space.",
+                "intro": "Contract development of high-load backend and fullstack solutions for fintech, crypto, and B2B clients. Each project covers the full cycle: architecture from scratch — development — shipping the MVP to production — handover to the client's team.",
                 "subSections": [
                     {
-                        "heading": "Project 1: Crypto analytics platform with AI chat",
-                        "description": "A platform for traders and investors that aggregates exchange data, news feeds, and blockchain information to calculate personalized statistics and provide recommendations.",
-                        "bullets": [
-                            "Developed a high-load Node.js backend (microservice architecture) with inter-service communication via Apache Kafka",
-                            "Integrated exchange APIs: implemented real-time data collection via REST and WebSocket (connecting to major exchanges), stream aggregation and normalization",
-                            "Connected external data sources: parsing and processing data from CoinMarketCap, Messari, DeFiLlama, CoinGecko to enrich analytics and news feeds",
-                            "Worked with smart contracts: interacting with Ethereum-compatible networks via JSON-RPC providers, interacting with WebSocket RPC providers, working with Solidity contracts",
-                            "Developed an AI module: built a chat using AI SDK (integrating language models to answer user queries based on their portfolio and market data)",
-                            "Database work: schema design and query optimization in PostgreSQL (transactional data) and ClickHouse (analytics, time series, large volumes of historical data)."
-                        ]
+                        "heading": "Client: Finam — dedicated R&D / product group"
                     },
                     {
-                        "heading": "Project 2: Prediction market (Polymarket-like) for influencers",
-                        "description": "A platform enabling influencers to create polls (prediction markets) and followers to participate by placing bets. Implemented as a web app, mobile app (React Native), and Telegram Mini App",
+                        "heading": "Project 1 — Crypto analytics platform with an AI chat",
                         "bullets": [
-                            "Architected the system from scratch: stack selection, microservice decomposition, ensuring synchronization across different clients",
-                            "Developed the backend (Node.js) and smart contracts for prediction market logic (event creation, bet processing, payout calculations). Blockchain interaction via JSON-RPC, contract event handling",
-                            "Created a unified API for three clients: web (React), mobile (React Native), and Telegram Mini App. Ensured consistent business logic and security",
-                            "Wallet integration: implemented mechanisms for connecting crypto wallets (MetaMask, WalletConnect, Unisat, Phantom) for in-platform transactions",
-                            "Voting data processing: PostgreSQL for user data, results, and history; ClickHouse for activity analytics and influencer ranking calculations",
-                            "DevOps and CI/CD: set up pipelines for automated testing and deployment, containerization (Docker), orchestration (Kubernetes)."
-                        ]
+                            "Designed and built a high-load backend on Node.js/Nest.js (microservices, Apache Kafka inter-service bus) processing events from exchange streams",
+                            "Implemented real-time data collection over REST/WebSocket from exchanges plus aggregation of external sources (CoinMarketCap, Messari, DeFiLlama, CoinGecko); normalized heterogeneous streams into a single model",
+                            "Built storage on PostgreSQL (transactions) + ClickHouse (time series)",
+                            "Developed an AI module for personalized recommendations (AI SDK / LLM) on top of the user's portfolio and market data",
+                            "Integrated with Ethereum-network smart contracts (JSON-RPC / WebSocket RPC, Solidity)",
+                            "Result: the MVP shipped to production and was handed over to the product team."
+                        ],
+                        "stack": "Node.js, Nest.js, TypeScript, Next.js, React, Zustand, Kafka, PostgreSQL, ClickHouse, Prisma, Redis, WebSocket, JSON-RPC, Ethers.js, AI SDK, LLM, Claude Code, Cursor, Docker, Kubernetes, CI/CD."
                     },
                     {
-                        "heading": "Shared R&D group achievements:",
+                        "heading": "Project 2 — Prediction market (Polymarket/Kalshi-like) for influencers",
                         "bullets": [
-                            "Participated in the full product lifecycle — from brainstorming and design decisions to shipping MVPs to production",
-                            "Refactored and optimized existing modules, ensuring scalability and maintainability",
-                            "Actively collaborated with ML, mobile development, and design teams to align requirements and timelines",
-                            "Contributed to code reviews, development standards adoption, and rapid prototyping of new features."
-                        ]
-                    }
-                ],
-                "stack": "Node.js, Nest.js, Javascript, TypeScript, Kafka, PostgreSQL, Prisma, ClickHouse, Redis, REST, WebSocket, JSON-RPC, Ethers.js, solana/web3, web3, Docker, Kubernetes, Next.js, Zustand, React Native, Expo, AI SDK (OpenAI, etc.), Git, CI/CD, Claude Code, Cursor"
-            },
-            {
-                "company": "Pharmhub",
-                "position": "Senior Fullstack Developer",
-                "period": "March 2025 — July 2025 (5 months)",
-                "subSections": [
+                            "Architected the system from scratch: microservices + smart contracts (event creation, bet acceptance, payout calculation), a unified API for 3 clients — web (React/Next.js), mobile (React Native), Telegram Mini App",
+                            "Implemented crypto wallet connection (MetaMask, WalletConnect, Unisat, Phantom) and handling of on-chain contract events",
+                            "PostgreSQL — user data; ClickHouse — activity analytics and rankings; DevOps pipelines (Docker/K8s/CI-CD)",
+                            "Result: launched an MVP for web/mobile/Telegram with shared business logic and security."
+                        ],
+                        "stack": "Node.js, Nest.js, TypeScript, React, React Native, Next.js, Solidity, Ethers.js, web3, PostgreSQL, ClickHouse, Kafka, Redis, Docker, Kubernetes, AI SDK, LLM, Claude Code, Cursor."
+                    },
+                    {
+                        "heading": "Client: Biocad — internal high-load B2B platform"
+                    },
                     {
                         "bullets": [
-                            "Architected and developed a high-load B2B/B2C platform for pharmaceutical manufacturers and consumers",
-                            "Full project ownership: from design decisions and task decomposition to sprint planning and quality control of delivered features",
-                            "Database optimization: schema design, complex queries and pharmaceutical reference catalogs, ensuring high response speed under peak loads",
-                            "Codebase refactoring, improved readability and maintainability, extensive test coverage for critical modules",
-                            "CI/CD setup and maintenance for automated testing and platform deployment",
-                            "Contributing to engineering culture: conducting interviews, onboarding and mentoring new team members, immersing them in pharma domain specifics."
-                        ]
+                            "Designed a fault-tolerant architecture from scratch (client + server) for the high loads of a business-critical internal tool",
+                            "Carried out deep refactoring of the DB schema and queries (PostgreSQL/TimescaleDB) for large volumes, which helped reduce server load",
+                            "Modernized the legacy codebase, covered critical modules with unit/integration tests, set up CI/CD",
+                            "Result: the solution was delivered and put into operation."
+                        ],
+                        "stack": "Node.js, Nest.js, TypeScript, PostgreSQL, TimescaleDB, Prisma, Kafka, Socket.io, Redis, Jest, Supertest, Docker, Kubernetes."
                     }
-                ],
-                "stack": "Javascript, Typescript, React, Redux-toolkit, Scss, Vite, Postgres, Clickhouse, Prisma, Git, Docker, Kubernetes, Node.js, Nest.js, Go, Kafka, Socket.io, Redis, Jest, Supertest, React testing library, Yandex Tracker, Cursor"
-            },
-            {
-                "company": "Biocad",
-                "position": "Senior Backend Developer",
-                "period": "November 2024 — March 2025 (5 months)",
-                "subSections": [
-                    {
-                        "bullets": [
-                            "Development and maintenance of a high-load B2B platform: ensuring uninterrupted operation of a business-critical internal tool for company employees",
-                            "Fault-tolerant architecture design: building a scalable solution from scratch, including both client and server sides optimized for heavy loads",
-                            "Database performance optimization: deep refactoring of queries and schema to handle large data volumes, accelerating data retrieval and reducing server load",
-                            "Code quality improvement: modernizing legacy codebase, enhancing readability and maintainability, introducing unit and integration tests for critical modules",
-                            "CI/CD automation: setting up and maintaining continuous integration and delivery pipelines, automating build and deployment processes to speed up releases."
-                        ]
-                    }
-                ],
-                "stack": "Javascript, Typescript, Postgres, Prisma, TimescaleDB, Git, Docker, Kubernetes, Node.js, Nest.js, Kafka, Socket.io, Redis, Jest, Supertest"
+                ]
             },
             {
                 "company": "EdgeCenter",
