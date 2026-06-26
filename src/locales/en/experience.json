@@ -12,47 +12,35 @@
         "durationAnd": "and",
         "entries": [
             {
-                "company": "Skriabin A. (Sole Proprietor) — Contract Development",
+                "company": "Finam",
                 "position": "Senior Fullstack Developer",
                 "period": "",
-                "intro": "Contract development of high-load backend and fullstack solutions for fintech, crypto, and B2B clients. Each project covers the full cycle: architecture from scratch — development — shipping the MVP to production — handover to the client's team.",
+                "intro": "Part of a dedicated R&D / product team building high-load fintech and crypto products end-to-end.",
                 "subSections": [
                     {
-                        "heading": "Client: Finam — dedicated R&D / product group"
-                    },
-                    {
-                        "heading": "Project 1 — Crypto analytics platform with an AI chat",
+                        "heading": "Project 1 — Crypto analytics platform with an AI chat assistant",
                         "bullets": [
-                            "Designed and built a high-load backend on Node.js/Nest.js (microservices, Apache Kafka inter-service bus) processing events from exchange streams",
-                            "Implemented real-time data collection over REST/WebSocket from exchanges plus aggregation of external sources (CoinMarketCap, Messari, DeFiLlama, CoinGecko); normalized heterogeneous streams into a single model",
-                            "Built storage on PostgreSQL (transactions) + ClickHouse (time series)",
-                            "Developed an AI module for personalized recommendations (AI SDK / LLM) on top of the user's portfolio and market data",
-                            "Integrated with Ethereum-network smart contracts (JSON-RPC / WebSocket RPC, Solidity)",
-                            "Result: the MVP shipped to production and was handed over to the product team."
+                            "Architected and built a high-load backend on Node.js / Nest.js using a microservices architecture with Apache Kafka as the inter-service event bus.",
+                            "Implemented real-time market-data ingestion directly from crypto exchanges over WebSocket, plus aggregation from external providers (CoinMarketCap, Messari, DeFiLlama, CoinGecko).",
+                            "Designed a hybrid storage layer: PostgreSQL for transactional/relational data and ClickHouse for high-volume time-series and analytical queries.",
+                            "Built an AI assistant / chat module that turns natural-language questions into portfolio insights and trading recommendations (LLM + AI SDK over the aggregated market data).",
+                            "Integrated on-chain data via smart contracts (JSON-RPC / WebSocket RPC, Ethers.js, Solidity).",
+                            "Delivered the frontend on Next.js / React with Zustand state management and real-time updates over WebSocket.",
+                            "Containerized and orchestrated the platform with Docker and Kubernetes."
                         ],
-                        "stack": "Node.js, Nest.js, TypeScript, Next.js, React, Zustand, Kafka, PostgreSQL, ClickHouse, Prisma, Redis, WebSocket, JSON-RPC, Ethers.js, AI SDK, LLM, Claude Code, Cursor, Docker, Kubernetes, CI/CD."
+                        "stack": "Node.js, Nest.js, TypeScript, Next.js, React, Zustand, Kafka, PostgreSQL, ClickHouse, Prisma, Redis, WebSocket, JSON-RPC, Ethers.js, AI SDK, LLM, Docker, Kubernetes"
                     },
                     {
-                        "heading": "Project 2 — Prediction market (Polymarket/Kalshi-like) for influencers",
+                        "heading": "Project 2 — Prediction market",
                         "bullets": [
-                            "Architected the system from scratch: microservices + smart contracts (event creation, bet acceptance, payout calculation), a unified API for 3 clients — web (React/Next.js), mobile (React Native), Telegram Mini App",
-                            "Implemented crypto wallet connection (MetaMask, WalletConnect, Unisat, Phantom) and handling of on-chain contract events",
-                            "PostgreSQL — user data; ClickHouse — activity analytics and rankings; DevOps pipelines (Docker/K8s/CI-CD)",
-                            "Result: launched an MVP for web/mobile/Telegram with shared business logic and security."
+                            "Built a decentralized prediction market where users trade on the outcomes of real-world events.",
+                            "Microservices backend (Node.js / Nest.js) integrated with on-chain smart contracts (Solidity, Ethers.js) for order settlement and payouts.",
+                            "Multi-wallet support across EVM and non-EVM chains: MetaMask, WalletConnect, Unisat, Phantom.",
+                            "Cross-platform delivery from a shared API: web (Next.js/React), mobile (React Native), and a Telegram Mini App.",
+                            "Kafka-driven event pipeline; PostgreSQL + ClickHouse for orders/positions and analytics; Redis for caching and pub/sub.",
+                            "Real-time order-book and price updates over WebSocket; deployed with Docker + Kubernetes."
                         ],
-                        "stack": "Node.js, Nest.js, TypeScript, React, React Native, Next.js, Solidity, Ethers.js, web3, PostgreSQL, ClickHouse, Kafka, Redis, Docker, Kubernetes, AI SDK, LLM, Claude Code, Cursor."
-                    },
-                    {
-                        "heading": "Client: Biocad — internal high-load B2B platform"
-                    },
-                    {
-                        "bullets": [
-                            "Designed a fault-tolerant architecture from scratch (client + server) for the high loads of a business-critical internal tool",
-                            "Carried out deep refactoring of the DB schema and queries (PostgreSQL/TimescaleDB) for large volumes, which helped reduce server load",
-                            "Modernized the legacy codebase, covered critical modules with unit/integration tests, set up CI/CD",
-                            "Result: the solution was delivered and put into operation."
-                        ],
-                        "stack": "Node.js, Nest.js, TypeScript, PostgreSQL, TimescaleDB, Prisma, Kafka, Socket.io, Redis, Jest, Supertest, Docker, Kubernetes."
+                        "stack": "Node.js, Nest.js, TypeScript, React, React Native, Next.js, Solidity, Ethers.js, PostgreSQL, ClickHouse, Kafka, Redis, WebSocket, Docker, Kubernetes"
                     }
                 ]
             },

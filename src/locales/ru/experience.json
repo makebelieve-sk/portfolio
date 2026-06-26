@@ -12,47 +12,35 @@
         "durationAnd": "и",
         "entries": [
             {
-                "company": "ИП Скрябин А. — Контрактная разработка",
+                "company": "Финам",
                 "position": "Senior Fullstack разработчик",
                 "period": "",
-                "intro": "Контрактная разработка high-load backend и fullstack-решений для финтех-, крипто- и B2B-заказчиков. По каждому проекту — полный цикл: архитектура с нуля — разработка — вывод MVP в прод — передача команде заказчика.",
+                "intro": "В составе выделенной R&D / продуктовой команды разрабатывал высоконагруженные финтех- и крипто-продукты end-to-end.",
                 "subSections": [
-                    {
-                        "heading": "Клиент: ФИНАМ — выделенная R&D / продуктовая группа"
-                    },
                     {
                         "heading": "Проект 1 — Крипто-аналитическая платформа с AI-чатом",
                         "bullets": [
-                            "Спроектировал и реализовал high-load backend на Node.js/Nest.js (микросервисы, межсервисная шина на Apache Kafka), обработка событий из биржевых потоков",
-                            "Реализовал сбор данных в реальном времени по REST/WebSocket с бирж + агрегацию внешних источников (CoinMarketCap, Messari, DeFiLlama, CoinGecko); нормализация разнородных потоков в единую модель",
-                            "Построил хранилище на PostgreSQL (транзакции) + ClickHouse (тайм-серии)",
-                            "Разработал AI-модуль персональных рекомендаций (AI SDK / LLM) поверх портфеля пользователя и рыночных данных",
-                            "Интеграция со смарт-контрактами Ethereum-сетей (JSON-RPC / WebSocket RPC, Solidity)",
-                            "Результат: MVP выведен в прод и передан продуктовой команде."
+                            "Спроектировал и реализовал высоконагруженный бэкенд на Node.js / Nest.js в микросервисной архитектуре с шиной межсервисного взаимодействия на Apache Kafka.",
+                            "Реализовал сбор рыночных данных в реальном времени напрямую с криптобирж по WebSocket, а также агрегацию из внешних источников (CoinMarketCap, Messari, DeFiLlama, CoinGecko).",
+                            "Спроектировал гибридный слой хранения: PostgreSQL для транзакционных/реляционных данных и ClickHouse для time-series и тяжёлых аналитических запросов.",
+                            "Разработал AI-ассистент / чат-модуль, который превращает запросы на естественном языке в аналитику по портфелю и торговые рекомендации (LLM + AI SDK поверх агрегированных рыночных данных).",
+                            "Интегрировал ончейн-данные через смарт-контракты (JSON-RPC / WebSocket RPC, Ethers.js, Solidity).",
+                            "Сделал фронтенд на Next.js / React с управлением состоянием через Zustand и обновлениями в реальном времени по WebSocket.",
+                            "Контейнеризировал и оркестрировал платформу с помощью Docker и Kubernetes."
                         ],
-                        "stack": "Node.js, Nest.js, TypeScript, Next.js, React, Zustand, Kafka, PostgreSQL, ClickHouse, Prisma, Redis, WebSocket, JSON-RPC, Ethers.js, AI SDK, LLM, Claude Code, Cursor, Docker, Kubernetes, CI/CD."
+                        "stack": "Node.js, Nest.js, TypeScript, Next.js, React, Zustand, Kafka, PostgreSQL, ClickHouse, Prisma, Redis, WebSocket, JSON-RPC, Ethers.js, AI SDK, LLM, Docker, Kubernetes"
                     },
                     {
-                        "heading": "Проект 2 — Предиктивный рынок (аналог Polymarket/Kalshi) для инфлюенсеров",
+                        "heading": "Проект 2 — Prediction market (рынок предсказаний)",
                         "bullets": [
-                            "Спроектировал архитектуру с нуля: микросервисы + смарт-контракты (создание событий, приём ставок, расчёт выигрышей), единый API для 3 клиентов — web (React/Next.js), mobile (React Native), Telegram Mini App",
-                            "Реализовал подключение крипто-кошельков (MetaMask, WalletConnect, Unisat, Phantom) и обработку on-chain событий контрактов",
-                            "PostgreSQL — пользовательские данные; ClickHouse — аналитика активности и рейтинги; DevOps-пайплайны (Docker/K8s/CI-CD)",
-                            "Результат: запущен MVP под web/mobile/Telegram с единой бизнес-логикой и безопасностью."
+                            "Построил децентрализованный рынок предсказаний, где пользователи торгуют на исходах реальных событий.",
+                            "Микросервисный бэкенд (Node.js / Nest.js) с интеграцией ончейн смарт-контрактов (Solidity, Ethers.js) для расчётов по сделкам и выплат.",
+                            "Поддержка подключения множества кошельков на EVM и не-EVM сетях: MetaMask, WalletConnect, Unisat, Phantom.",
+                            "Кросс-платформенная поставка из общего API: веб (Next.js/React), мобайл (React Native) и Telegram Mini App.",
+                            "Событийный пайплайн на Kafka; PostgreSQL + ClickHouse для ордеров/позиций и аналитики; Redis для кэширования и pub/sub.",
+                            "Обновление стакана и цен в реальном времени по WebSocket; деплой через Docker + Kubernetes."
                         ],
-                        "stack": "Node.js, Nest.js, TypeScript, React, React Native, Next.js, Solidity, Ethers.js, web3, PostgreSQL, ClickHouse, Kafka, Redis, Docker, Kubernetes, AI SDK, LLM, Claude Code, Cursor."
-                    },
-                    {
-                        "heading": "Клиент: БИОКАД — внутренняя high-load B2B-платформа"
-                    },
-                    {
-                        "bullets": [
-                            "Спроектировал отказоустойчивую архитектуру с нуля (клиент + сервер) под высокие нагрузки критичного внутреннего инструмента",
-                            "Провёл глубокий рефакторинг схемы и запросов БД (PostgreSQL/TimescaleDB) под большие объёмы, что повлияло на снижение нагрузки на сервер",
-                            "Модернизировал legacy-кодбазу, покрыл критичные модули unit/integration-тестами, поднял CI/CD",
-                            "Результат: решение сдано и передано в эксплуатацию."
-                        ],
-                        "stack": "Node.js, Nest.js, TypeScript, PostgreSQL, TimescaleDB, Prisma, Kafka, Socket.io, Redis, Jest, Supertest, Docker, Kubernetes."
+                        "stack": "Node.js, Nest.js, TypeScript, React, React Native, Next.js, Solidity, Ethers.js, PostgreSQL, ClickHouse, Kafka, Redis, WebSocket, Docker, Kubernetes"
                     }
                 ]
             },
